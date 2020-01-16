@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "363169116359",
+    "firebase_url": "https://lojavirtualudemymouco.firebaseio.com",
+    "project_id": "lojavirtualudemymouco",
+    "storage_bucket": "lojavirtualudemymouco.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:363169116359:android:d370392cb66fc892028ee2",
+        "android_client_info": {
+          "package_name": "com.example.loja_virtual"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "363169116359-fm1gbtdm2pn2v4robjl1evnd488rsat4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCaRTsOpZ56dFhJtGumtdoWpygBarDFn5g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "363169116359-fm1gbtdm2pn2v4robjl1evnd488rsat4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
