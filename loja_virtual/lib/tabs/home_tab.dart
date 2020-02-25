@@ -11,15 +11,16 @@ class HomeTab extends StatelessWidget {
       decoration: BoxDecoration(
         gradient: LinearGradient(
           colors: [
-            Color.fromARGB(255, 211, 118, 130),
-            Color.fromARGB(255, 253, 181, 168)
+            Color.fromARGB(255, 203, 236, 255),
+            Colors.white,
+            //Color.fromARGB(255, 211, 118, 130),
+            //Color.fromARGB(255, 253, 181, 168)
           ],
           begin: Alignment.topLeft,
           end: Alignment.bottomRight,
         ),
       ),
     );
-
     return Stack(
       children: <Widget>[
         _buildBodyBack(),
@@ -35,7 +36,7 @@ class HomeTab extends StatelessWidget {
                 centerTitle: true,
               ),
             ),
-            FutureBuilder<QuerySnapshot>(
+           FutureBuilder<QuerySnapshot>(
               future: Firestore.instance.collection(
                 "home").orderBy("pos").getDocuments(),
               builder: (context, snapshot){
@@ -63,7 +64,7 @@ class HomeTab extends StatelessWidget {
                         (doc){
                           return FadeInImage.memoryNetwork(
                               placeholder: kTransparentImage,
-                              image: doc.data["images"],
+                              image: doc.data["image"],
                               fit: BoxFit.cover,
                           );
                         }
