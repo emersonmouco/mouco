@@ -1,0 +1,79 @@
+﻿<Properties StartupConfiguration="Multiple Projects">
+  <MonoDevelop.Ide.Workbench ActiveDocument="PetShopFatec.Web/Controllers/CategoryController.cs">
+    <Files>
+      <File FileName="PetShopFatec.Web/Controllers/ProductController.cs" />
+      <File FileName="PetShopFatec.ProductAPI/Controllers/ProductController.cs" />
+      <File FileName="PetShopFatec.ProductAPI/Services/Entities/ProductService.cs" />
+      <File FileName="PetShopFatec.ProductAPI/Repositories/Entities/ProductRepository.cs" />
+      <File FileName="PetShopFatec.Web/Services/Entities/ProductService.cs" />
+      <File FileName="PetShopFatec.Web/Views/Product/UpdateProduct.cshtml" />
+      <File FileName="PetShopFatec.Web/Models/Entities/ProductViewModel.cs" />
+      <File FileName="PetShopFatec.ProductAPI/DTO/Entities/ProductDTO.cs" />
+      <File FileName="PetShopFatec.Web/Services/Entities/CategoryService.cs" />
+      <File FileName="PetShopFatec.Web/Services/Entities/BrandService.cs" />
+      <File FileName="PetShopFatec.IdentityServer/SeedDataBase/Entities/DataBaseIdentityServerInitializer.cs" />
+      <File FileName="PetShopFatec.Web/Controllers/BrandController.cs" />
+      <File FileName="PetShopFatec.ProductAPI/Controllers/BrandController.cs" />
+      <File FileName="PetShopFatec.Web/Program.cs" />
+      <File FileName="PetShopFatec.Web/appsettings.json" />
+      <File FileName="PetShopFatec.ProductAPI/Services/Entities/BrandService.cs" />
+      <File FileName="PetShopFatec.Web/Views/Shared/_Layout.cshtml" />
+      <File FileName="PetShopFatec.Web/Views/Shared/_LoginPartial.cshtml" Line="1" Column="1" />
+      <File FileName="PetShopFatec.Web/Controllers/CategoryController.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="PetShopFatec">
+            <Node name="Services" expanded="True">
+              <Node name="PetShopFatec.IdentityServer" expanded="True" />
+            </Node>
+            <Node name="Web">
+              <Node name="PetShopFatec.Web">
+                <Node name="Controllers" expanded="True">
+                  <Node name="CategoryController.cs" selected="True" />
+                </Node>
+                <Node name="Views" expanded="True">
+                  <Node name="Shared" expanded="True" />
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <DisabledProjects>
+    <String>PetShopFatec.ProductAPI/PetShopFatec.IdentityServer/PetShopFatec.IdentityServer.csproj</String>
+  </DisabledProjects>
+  <MonoDevelop.Ide.ItemProperties.Web.PetShopFatec.Web PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" />
+  <MonoDevelop.Ide.ItemProperties.Services.PetShopFatec.ProductAPI PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/emersonmouco/Documents/Fatec/PetShopFatec/PetShopFatec.ProductAPI/Repositories/Entities/ProductRepository.cs" relfile="PetShopFatec.ProductAPI/Repositories/Entities/ProductRepository.cs" line="43" column="1" />
+      <Breakpoint file="/Users/emersonmouco/Documents/Fatec/PetShopFatec/PetShopFatec.ProductAPI/Repositories/Entities/ProductRepository.cs" relfile="PetShopFatec.ProductAPI/Repositories/Entities/ProductRepository.cs" line="44" column="1" />
+      <Breakpoint file="/Users/emersonmouco/Documents/Fatec/PetShopFatec/PetShopFatec.ProductAPI/Repositories/Entities/ProductRepository.cs" relfile="PetShopFatec.ProductAPI/Repositories/Entities/ProductRepository.cs" line="45" column="1" />
+      <Breakpoint file="/Users/emersonmouco/Documents/Fatec/PetShopFatec/PetShopFatec.ProductAPI/Services/Entities/ProductService.cs" relfile="PetShopFatec.ProductAPI/Services/Entities/ProductService.cs" line="44" column="1" />
+      <Breakpoint file="/Users/emersonmouco/Documents/Fatec/PetShopFatec/PetShopFatec.ProductAPI/Services/Entities/ProductService.cs" relfile="PetShopFatec.ProductAPI/Services/Entities/ProductService.cs" line="45" column="1" />
+      <Breakpoint file="/Users/emersonmouco/Documents/Fatec/PetShopFatec/PetShopFatec.ProductAPI/Controllers/ProductController.cs" relfile="PetShopFatec.ProductAPI/Controllers/ProductController.cs" line="48" column="1" />
+      <Breakpoint file="/Users/emersonmouco/Documents/Fatec/PetShopFatec/PetShopFatec.ProductAPI/Controllers/ProductController.cs" relfile="PetShopFatec.ProductAPI/Controllers/ProductController.cs" line="50" column="1" />
+      <Breakpoint file="/Users/emersonmouco/Documents/Fatec/PetShopFatec/PetShopFatec.Web/Controllers/ProductController.cs" relfile="PetShopFatec.Web/Controllers/ProductController.cs" line="83" column="1" />
+      <Breakpoint file="/Users/emersonmouco/Documents/Fatec/PetShopFatec/PetShopFatec.Web/Controllers/ProductController.cs" relfile="PetShopFatec.Web/Controllers/ProductController.cs" line="84" column="1" />
+      <Breakpoint file="/Users/emersonmouco/Documents/Fatec/PetShopFatec/PetShopFatec.Web/Services/Entities/ProductService.cs" relfile="PetShopFatec.Web/Services/Entities/ProductService.cs" line="88" column="1" />
+      <Breakpoint file="/Users/emersonmouco/Documents/Fatec/PetShopFatec/PetShopFatec.Web/Services/Entities/ProductService.cs" relfile="PetShopFatec.Web/Services/Entities/ProductService.cs" line="94" column="1" />
+      <Breakpoint file="/Users/emersonmouco/Documents/Fatec/PetShopFatec/PetShopFatec.Web/Services/Entities/ProductService.cs" relfile="PetShopFatec.Web/Services/Entities/ProductService.cs" line="95" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.Services.PetShopFatec.IdentityServer PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" />
+  <MultiItemStartupConfigurations>
+    <MultiItemSolutionRunConfiguration Id="Multiple Projects" Name="Multiple Projects">
+      <Items>
+        <StartupItem ItemId="{61C2BBBB-8F6E-4D0C-9C3E-3CBE06571836}" ItemName="PetShopFatec.IdentityServer" ConfigurationId="Default" />
+        <StartupItem ItemId="{5D289EF4-5499-4D54-AE19-E0D672DB53F3}" ItemName="PetShopFatec.ProductAPI" ConfigurationId="Default" />
+        <StartupItem ItemId="{B05B6B84-570C-40A8-B3FC-B6FD8A54CD79}" ItemName="PetShopFatec.Web" ConfigurationId="Default" />
+      </Items>
+    </MultiItemSolutionRunConfiguration>
+  </MultiItemStartupConfigurations>
+</Properties>

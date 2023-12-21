@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../build/PetShopFatec.Web.props" />
+</Project>

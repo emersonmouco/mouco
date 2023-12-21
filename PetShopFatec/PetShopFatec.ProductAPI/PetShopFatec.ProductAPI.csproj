@@ -1,0 +1,59 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="6.0.2" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <None Remove="Model\" />
+    <None Remove="Model\Entities\" />
+    <None Remove="Context\" />
+    <None Remove="Context\Entities\" />
+    <None Remove="DTOs\Entities\" />
+    <None Remove="DTO\" />
+    <None Remove="DTO\Mappings\" />
+    <None Remove="Repositories\" />
+    <None Remove="Repositories\Entities\" />
+    <None Remove="Repositories\Interfaces\" />
+    <None Remove="Controllers\" />
+    <None Remove="Services\" />
+    <None Remove="Services\Interfaces\" />
+    <None Remove="Services\Entities\" />
+    <None Remove="Roles\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Model\" />
+    <Folder Include="Model\Entities\" />
+    <Folder Include="Context\" />
+    <Folder Include="Context\Entities\" />
+    <Folder Include="DTO\Entities\" />
+    <Folder Include="DTO\" />
+    <Folder Include="DTO\Mappings\" />
+    <Folder Include="Repositories\" />
+    <Folder Include="Repositories\Entities\" />
+    <Folder Include="Repositories\Interfaces\" />
+    <Folder Include="Controllers\" />
+    <Folder Include="Services\" />
+    <Folder Include="Services\Interfaces\" />
+    <Folder Include="Services\Entities\" />
+    <Folder Include="Roles\" />
+  </ItemGroup>
+</Project>
