@@ -1,0 +1,235 @@
+programa
+{
+	funcao inicio ()
+	{
+		cadeia confirme
+		cadeia empresa,login,senha
+		cadeia verlogin, versenha
+		inteiro menu
+		logico menuloop,acesso, cadastrado
+		menuloop=verdadeiro
+		acesso=falso
+		cadastrado=falso
+		faca
+		{
+			escreva("Bem vindo ao sistema de RH da TLSENAC.")
+			escreva("\n Escolha das funções mostradas a baixo.")
+			escreva("\n\n   [1] -- REGISTRAR")
+			escreva("\n   [2] -- LOGIN")
+			escreva("\n   [3] -- SAIR\n\n")
+			escreva(": ")
+			leia(menu)
+			se (menu==1)
+			{
+				limpa()
+				escreva("Nome da empressa a ser registrada: ")
+				leia(empresa)
+				escreva("Definir o login de acesso: ")
+				leia(login)
+				escreva("Definir a senha de acesso: ")
+				leia(senha)
+				escreva("\npressione Enter para registrar ")
+				leia(confirme)
+				limpa()
+			}
+			senao se(menu==2)
+			{
+				faca
+				{
+					limpa()
+					escreva("Informe o login e senha de acesso:")
+					escreva("\n Login: ")
+					leia(verlogin)
+					escreva(" Senha: ")
+					leia(versenha)
+					se(verlogin!=login)
+					{
+						limpa()
+						escreva("Login inexistente ou inválido.")
+						escreva("\n\nPressione Enter para voltar ")
+						leia(confirme)
+						limpa()
+					}
+					senao se(versenha!=senha)
+					{
+						limpa()
+						escreva("A senha informada é inválida.")
+						escreva("\n\nPressione Enter para voltar ")
+						leia(confirme)
+						limpa()
+						
+					}
+					senao
+					{
+						acesso=verdadeiro
+						menuloop=falso
+					}
+				}
+				enquanto(acesso==falso)
+				limpa()
+				cadeia cidadev[3]={"Água escura","Campo pequeno","Três rios e meio"}
+				cadeia cargov[3]={"Engenheiro","Mestre de obras","Pedreiro"}
+				cadeia nome
+				real salariov[3]={10000.00,2500.00,1500.00}
+				inteiro cidade,filhos,cargo,escolhaEmpresa, Psaude, Vtrasporte
+				logico loopempresa
+				real creche, saude, ticket, tprt, INSS,h2o
+				inteiro periculosidade
+				loopempresa=verdadeiro
+				faca
+				{
+					escreva("Boas vindas! ",empresa)
+					escreva("\n [1] -- Registrar funcionario")
+					escreva("\n [2] -- Analizar fichas de funcionarios")
+					escreva("\n [3] -- Log Out")
+					escreva("\n\n: ")
+					leia(escolhaEmpresa)
+					
+					se(escolhaEmpresa==1)
+					{
+						limpa()
+						escreva("nome do funcionário: ")
+						leia(nome)
+						
+						
+						limpa()
+						escreva("cidade de atuação.")
+						escreva("\n[1] -- Água escura")
+						escreva("\n[2] -- Campo pequeno")
+						escreva("\n[3] -- Três rios e meio")
+						escreva("\n\ncódigo: ")
+						leia(cidade)
+						
+						limpa()
+						escreva("quantidade de filhos: ")
+						leia(filhos)
+						
+						limpa()
+						escreva("Plano de saúde?")
+						escreva("\n[1] -- SIM")
+						escreva("\n[2] -- NÃO")
+						escreva("\n: ")
+						leia(Psaude)
+						
+						limpa()
+						escreva("Vale trasporte?")
+						escreva("\n[1] -- SIM")
+						escreva("\n[2] -- NÃO")
+						escreva("\n: ")
+						leia(Vtrasporte)
+						
+						limpa()
+						escreva("Cargo de atuação.")
+						escreva("\n[1] -- Engenheiro")
+						escreva("\n[2] -- Mestre de obras")
+						escreva("\n[3] -- Pedreiro")
+						escreva("\n: ")
+						leia(cargo)
+						
+						limpa()
+						escreva("Pressione Enter para finalizar ")
+						leia(confirme)
+						cadastrado=verdadeiro
+						limpa()
+						
+					}
+					senao se(escolhaEmpresa==2)
+					{
+						se(cadastrado==verdadeiro)
+						{
+							limpa()
+							escreva("》》》》TLSENAC ENGENHARIA《《《《")
+							escreva("\n\nNome: ",nome)
+							escreva("\nCargo: ",cargov[cargo-1])
+							escreva("\nÁrea de atuação: ",cidadev[cidade-1])
+							escreva("\n\nSalário bruto: ",salariov[cargo-1]," R$")
+							escreva("\n\n  Acréscimos:")
+							real acrescimo=0
+							se (filhos>0)
+							{
+								creche=(salariov[cargo-1]/100)*5
+								creche=creche*filhos
+								escreva("\n   Auxilio creche: ",creche," R$")
+								acrescimo+=creche
+							}
+							
+							
+							se (Psaude==1)
+							{
+								saude=400.0
+								escreva("\n   Plano de saude: ",saude," R$")
+								acrescimo+=saude
+							}
+							
+							se(cargo!=1)
+							{
+								periculosidade=(salariov[cargo-1]/100)*10
+								escreva("\n   Periculosidade: ",periculosidade," R$")
+								acrescimo+=periculosidade
+							}
+							
+							escreva("\n\n  Descontos:")
+							real desconto=0
+							
+							ticket=(salariov[cargo-1]/100)*11
+							desconto+=ticket
+							escreva("\n    Ticket Alimentação: -",ticket," R$")
+							se(Vtrasporte==1)
+							{
+								tprt=(salariov[cargo-1]/100)*10
+								escreva("\n    Vale Trasporte: -",tprt," R$")
+								desconto+=tprt
+							}
+							INSS=(salariov[cargo-1]/100)*11
+							escreva("\n    INSS: -",INSS, " R$")
+							desconto+=INSS
+							h2o=salariov[cargo-1]+acrescimo-desconto
+							escreva("\n\n  Salário Líquido: ",h2o," R$")
+							
+							escreva("\n\nPressione Enter para voltar: ")
+							leia(confirme)
+							limpa()
+						}
+						senao
+						{
+							limpa()
+							escreva("Nenhum funcionário cadastrado")
+							escreva("\n\nPressione Enter para voltar ")
+							leia(confirme)
+							limpa()
+						}
+					}
+					senao se(escolhaEmpresa==3)
+					{
+						limpa()
+						escreva("fazendo log out... pressione Enter para continuar")
+						leia(confirme)
+						limpa()
+						menuloop=verdadeiro
+						loopempresa=falso
+					}
+					senao
+					{
+						
+					}
+				}
+				enquanto(loopempresa==verdadeiro)
+			}
+			senao se(menu==3)
+			{
+				limpa()
+				escreva("Fechando o sistema...")
+				menuloop=falso
+			}
+			senao
+			{
+				limpa()
+				escreva("valor informado inválido!")
+				escreva("\npressione Enter para voltar: ")
+				leia(confirme)
+				limpa()
+			}
+		}
+		enquanto(menuloop==verdadeiro)
+	}
+}
