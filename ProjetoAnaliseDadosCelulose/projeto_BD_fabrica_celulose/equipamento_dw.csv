@@ -1,0 +1,8 @@
+﻿id_equipamento,codigo_equipamento,nome_equipamento,modelo,id_tipo_equipamento,id_pessoa_fornecedor,data_instalacao
+1,DESF-001,Desfibrador Principal,DF-3000,1,4,2020-01-15 00:00:00
+2,PREN-001,Prensa Industrial,PI-5000,2,4,2020-02-20 00:00:00
+3,SEC-001,Secador Automático,SA-2000,3,4,2020-03-10 00:00:00
+4,CORT-001,Cortadeira de Bobinas,CB-1500,4,4,2021-05-05 00:00:00
+5,ENR-001,Enroladeira Automática,EA-1800,5,4,2021-06-18 00:00:00
+6,DESF-002,Desfibrador Secundário,DF-2500,1,4,2022-01-10 00:00:00
+7,PREN-002,Prensa Auxiliar,PI-3000,2,4,2022-02-15 00:00:00

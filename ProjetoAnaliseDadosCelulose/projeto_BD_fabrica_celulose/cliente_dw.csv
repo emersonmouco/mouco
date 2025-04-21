@@ -1,0 +1,5 @@
+﻿id_cliente,id_pessoa,codigo_cliente,Segmento_cliente,email_alternativo,Telefone_alternativo,Contato_alternativo
+1,2,CLI-001,Editorial,compras@editoraabc.com.br,""(31) 3333-1111"",Departamento de Compras
+2,3,CLI-002,Embalagens,vendas@embalagensxyz.com.br,""(21) 2222-2222"",Sr. Rodrigo
+3,5,CLI-003,Impressão,contato@graficadef.com.br,""(41) 7777-3333"",Sra. Juliana
+4,6,CLI-004,Escritório,compras@escritorioghi.com.br,""(51) 9999-4444"",Departamento Financeiro

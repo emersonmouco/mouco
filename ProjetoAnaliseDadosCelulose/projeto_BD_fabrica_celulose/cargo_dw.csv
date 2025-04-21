@@ -1,0 +1,8 @@
+﻿id_cargo,nome_cargo,descricao_cargo,nivel_cargo
+1,Gerente de Produção,Responsável pela linha de produção,Gerencial
+2,Operador de Máquinas,Opera equipamentos de produção,Operacional
+3,Técnico de Qualidade,Realiza controle de qualidade,Técnico
+4,Supervisor Florestal,Supervisiona atividades florestais,Supervisão
+5,Vendedor,Realiza vendas de produtos,Comercial
+6,Analista de Dados,Analisa dados de produção e vendas,Analítico
+7,Assistente Administrativo,Apoia atividades administrativas,Administrativo

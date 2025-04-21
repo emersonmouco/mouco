@@ -1,0 +1,6 @@
+﻿id_tipo_equipamento,codigo_tipo_equipamento,nome_tipo_equipamento,descricao_tipo_equipamento
+1,EQP-001,Desfibrador,Equipamento para desfibração da madeira
+2,EQP-002,Prensa,Prensa para formação da folha de papel
+3,EQP-003,Secador,Secador de papel
+4,EQP-004,Cortadeira,Máquina para corte do papel
+5,EQP-005,Enroladeira,Máquina para enrolar o papel em bobinas

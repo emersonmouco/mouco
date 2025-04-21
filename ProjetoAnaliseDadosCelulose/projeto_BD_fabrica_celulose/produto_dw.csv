@@ -1,0 +1,8 @@
+﻿id_produto,codigo_produto,nome_produto,descricao_produto,gramatura,aplicacao,id_tipo_fibra
+1,PAP-001,Papel Branco A4,Papel sulfite branco 75g,75.00,Escritório,1
+2,PAP-002,Papel Jornal,Papel para impressão de jornais,45.00,Impressão,2
+3,PAP-003,Papel Cartão,Papel cartão para embalagens,250.00,Embalagem,3
+4,PAP-004,Papel Reciclado,Papel 100% reciclado,80.00,Escritório,4
+5,PAP-005,Papel Especial,Papel para aplicações especiais,120.00,Indústria,5
+6,PAP-006,Papel Kraft,Papel resistente para embalagens,90.00,Embalagem,1
+7,PAP-007,Papel Fotográfico,Papel para impressão fotográfica,150.00,Fotografia,2

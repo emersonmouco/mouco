@@ -1,0 +1,8 @@
+﻿id_qualidade,nome_parametro_qualidade,unidade_medida,especificacao_minima,especificacao_maxima
+1,Brancura,ISO,85.00,95.00
+2,Gramatura,g/m²,70.00,80.00
+3,Resistência à Tração,kN/m,3.50,5.50
+4,Opacidade,%,85.00,95.00
+5,Umidade,%,4.00,6.00
+6,Alvura,ISO,90.00,100.00
+7,Espessura,µm,90.00,110.00

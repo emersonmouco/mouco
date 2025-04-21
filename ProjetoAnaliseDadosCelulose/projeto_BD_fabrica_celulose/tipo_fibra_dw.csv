@@ -1,0 +1,6 @@
+﻿id_tipo_fibra,nome_tipo_fibra,descricao_tipo_fibra,codigo_tipo_fibra
+1,Fibra Longa,Fibra de eucalipto com comprimento superior a 2mm,FL-001
+2,Fibra Curta,Fibra de pinus com comprimento inferior a 2mm,FC-002
+3,Fibra Mista,Mistura de fibras longas e curtas,FM-003
+4,Fibra Reciclada,Fibra obtida de material reciclado,FR-004
+5,Fibra Especial,Fibra com tratamento químico especial,FE-005

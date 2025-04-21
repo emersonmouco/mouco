@@ -1,0 +1,8 @@
+﻿id_funcionario,id_pessoa,codigo_funcionario,Id_cargo,data_contratacao,Salario_funcionario,Login_funcionario,Senha_funcionario
+1,2,FUNC-001,1,2018-05-10 00:00:00,8500.00,joao.silva,senha123
+2,3,FUNC-002,5,2019-02-15 00:00:00,4500.00,maria.souza,senha456
+3,5,FUNC-003,2,2020-03-20 00:00:00,3200.00,carlos.oliveira,senha789
+4,6,FUNC-004,3,2020-06-10 00:00:00,3800.00,ana.pereira,senha101
+5,7,FUNC-005,4,2021-01-05 00:00:00,4200.00,roberto.almeida,senha112
+6,1,FUNC-006,6,2021-08-15 00:00:00,5200.00,analista.dados,senha131
+7,1,FUNC-007,7,2022-02-01 00:00:00,2800.00,assist.admin,senha415

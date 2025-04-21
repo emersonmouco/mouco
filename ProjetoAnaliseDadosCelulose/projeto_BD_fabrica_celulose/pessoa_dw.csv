@@ -1,0 +1,8 @@
+﻿id_pessoa,nome_razaosocial_pessoa,apelido_nomefantasia_pessoa,Cpf_cnpj_pessoa,Rg_ie_pessoa,id_endereco,Telefone_pessoa,Celular_pessoa,email_pessoa
+1,Celulose SA,Celulose Indústria,12.345.678/0001-00,123.456.789,1,""(11) 4000-1000"",""(11) 94000-1000"",contato@celulose.com.br
+2,João Silva,João,123.456.789-00,12.345.678-9,6,""(31) 3333-4444"",""(31) 93333-4444"",joao.silva@email.com
+3,Maria Souza,Maria,987.654.321-00,98.765.432-1,4,""(21) 2222-3333"",""(21) 92222-3333"",maria.souza@email.com
+4,Indústria de Máquinas Ltda,Máquinas Pesadas,23.456.789/0001-00,234.567.890,7,""(19) 5555-6666"",""(19) 95555-6666"",vendas@maquinaspesadas.com.br
+5,Carlos Oliveira,Carlos,456.789.123-00,45.678.912-3,2,""(41) 7777-8888"",""(41) 97777-8888"",carlos.oliveira@email.com
+6,Ana Pereira,Ana,789.123.456-00,78.912.345-6,3,""(51) 9999-0000"",""(51) 99999-0000"",ana.pereira@email.com
+7,Roberto Almeida,Roberto,321.654.987-00,32.165.498-7,5,""(27) 4444-5555"",""(27) 94444-5555"",roberto.almeida@email.com

@@ -1,0 +1,8 @@
+﻿id_endereco,nome_endereco,rua,numero,bairro,cidade,estado,cep,complemento,latitude,longitude
+1,Matriz Celulose SA,Av. Industrial,1000,Industrial,São Paulo,SP,04500-000,Edifício Corporativo,-23.563500,-46.654300
+2,Fábrica Norte,Rua das Acácias,250,Zona Industrial,Curitiba,PR,80000-000,Galpão 5,-25.429600,-49.271700
+3,Fábrica Sul,Av. Florestal,500,Floresta,Porto Alegre,RS,90000-000,,-30.034600,-51.217700
+4,Escritório Comercial,Rua das Flores,35,Centro,Rio de Janeiro,RJ,20000-000,5º andar,-22.906800,-43.172900
+5,Floresta Eucalipto,Rodovia BR-101,Km 125,Zona Rural,Aracruz,ES,29190-000,Fazenda Santa Maria,-19.820600,-40.276600
+6,Residência Cliente,Rua das Palmeiras,123,Jardins,Belo Horizonte,MG,30000-000,Casa 2,-19.924500,-43.935200
+7,Fornecedor Máquinas,Av. das Máquinas,789,Industrial,Campinas,SP,13000-000,Galpão 12,-22.905600,-47.060800

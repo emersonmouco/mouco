@@ -1,0 +1,6 @@
+﻿id_talhao,codigo_talhao,nome_talhao,area_hectares,id_tipo_solo,id_especie_plantada,data_plantio,latitude_talhao,longitude_talhao
+1,TAL-001,Talhão Norte,50.00,1,1,2020-03-15 00:00:00,-19.821000,-40.277000
+2,TAL-002,Talhão Sul,45.00,2,2,2020-04-20 00:00:00,-19.822000,-40.278000
+3,TAL-003,Talhão Leste,60.00,3,3,2019-08-10 00:00:00,-19.823000,-40.279000
+4,TAL-004,Talhão Oeste,55.00,4,4,2021-02-05 00:00:00,-19.824000,-40.280000
+5,TAL-005,Talhão Central,40.00,5,5,2021-05-18 00:00:00,-19.825000,-40.281000
