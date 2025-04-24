@@ -1,6 +1,0 @@
-nome_produto,nome_parametro_qualidade,unidade_medida,especificacao_minima,especificacao_maxima,media_valor_medido,qtd_rejeicoes,total_avaliacoes,percentual_rejeicao
-"Papel Jornal",Umidade,%,4.00,6.00,5.200000,1,1,100.0000
-"Papel Reciclado",Umidade,%,4.00,6.00,5.500000,1,1,100.0000
-"Papel Cartão",Gramatura,g/m²,70.00,80.00,248.000000,0,1,0.0000
-"Papel Kraft",Gramatura,g/m²,70.00,80.00,89.000000,0,1,0.0000
-"Papel Fotográfico",Espessura,µm,90.00,110.00,148.000000,0,1,0.0000
