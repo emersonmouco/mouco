@@ -1,0 +1,6 @@
+TipoProduto;Produto Economico;Produto_Inovador;Produto_Intermediario;Produto Premium;Produto de Luxo
+Produto Economico;0,00000;4,24264;4,12311;3,16228;4,12311
+Produto Inovador;4,24264;0,00000;5,00000;4,89898;1,00000
+Produto Intermediario;4,12311;5,00000;0,00000;2,23607;5,09902
+Produto Premium;3,16228;4,89898;2,23607;0,00000;4,58258
+Produto de Luxo;4,12311;1,00000;5,09902;4,58258;0,00000

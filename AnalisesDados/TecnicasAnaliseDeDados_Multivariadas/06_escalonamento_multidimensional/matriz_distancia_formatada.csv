@@ -1,0 +1,6 @@
+Produto Economico,Produto_Inovador,Produto Premium,Produto_Intermediario,Produto de Luxo
+Produto Economico,0,4.24264,3.16228,4.12311,4.12311
+Produto Inovador,4.24264,0,4.89898,5,1
+Produto Intermediario,4.12311,5,2.23607,0,5.09902
+Produto Premium,3.16228,4.89898,0,2.23607,4.58258
+Produto de Luxo,4.12311,1,4.58258,5.09902,0
