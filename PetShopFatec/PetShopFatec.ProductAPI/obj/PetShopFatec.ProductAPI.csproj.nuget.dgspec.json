@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/emersonmouco/Documents/Fatec/PetShopFatec/PetShopFatec.ProductAPI/PetShopFatec.ProductAPI.csproj": {}
+    "/Users/emersonmouco/Documents/GitHub/mouco/PetShopFatec/PetShopFatec.ProductAPI/PetShopFatec.ProductAPI.csproj": {}
   },
   "projects": {
-    "/Users/emersonmouco/Documents/Fatec/PetShopFatec/PetShopFatec.ProductAPI/PetShopFatec.ProductAPI.csproj": {
+    "/Users/emersonmouco/Documents/GitHub/mouco/PetShopFatec/PetShopFatec.ProductAPI/PetShopFatec.ProductAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/emersonmouco/Documents/Fatec/PetShopFatec/PetShopFatec.ProductAPI/PetShopFatec.ProductAPI.csproj",
+        "projectUniqueName": "/Users/emersonmouco/Documents/GitHub/mouco/PetShopFatec/PetShopFatec.ProductAPI/PetShopFatec.ProductAPI.csproj",
         "projectName": "PetShopFatec.ProductAPI",
-        "projectPath": "/Users/emersonmouco/Documents/Fatec/PetShopFatec/PetShopFatec.ProductAPI/PetShopFatec.ProductAPI.csproj",
+        "projectPath": "/Users/emersonmouco/Documents/GitHub/mouco/PetShopFatec/PetShopFatec.ProductAPI/PetShopFatec.ProductAPI.csproj",
         "packagesPath": "/Users/emersonmouco/.nuget/packages/",
-        "outputPath": "/Users/emersonmouco/Documents/Fatec/PetShopFatec/PetShopFatec.ProductAPI/obj/",
+        "outputPath": "/Users/emersonmouco/Documents/GitHub/mouco/PetShopFatec/PetShopFatec.ProductAPI/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/emersonmouco/.nuget/NuGet/NuGet.Config"

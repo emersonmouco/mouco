@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "0vtSx00hJgWupuzaK3MtYDK/943DUevEAOsDJpoUE2HKAgFYBgFdMzTK2qgmR1CJe9UvAC2QIE6QvGN8O9zVhw==",
+  "dgSpecHash": "3QDJN9DCGoMOxwFw3Rl5jcaxYmUi7p1i2uj0x3qfTEl3Ki0sGdj9iT7ABxcuud4nkcIeekkF2Dg3OTNGe27vEQ==",
   "success": true,
-  "projectFilePath": "/Users/emersonmouco/Documents/Fatec/PetShopFatec/PetShopFatec.IdentityServer/PetShopFatec.IdentityServer.csproj",
+  "projectFilePath": "/Users/emersonmouco/Documents/GitHub/mouco/PetShopFatec/PetShopFatec.IdentityServer/PetShopFatec.IdentityServer.csproj",
   "expectedPackageFiles": [
     "/Users/emersonmouco/.nuget/packages/duende.identityserver/6.2.3/duende.identityserver.6.2.3.nupkg.sha512",
     "/Users/emersonmouco/.nuget/packages/duende.identityserver.aspnetidentity/6.2.3/duende.identityserver.aspnetidentity.6.2.3.nupkg.sha512",

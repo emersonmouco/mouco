@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/emersonmouco/Documents/Fatec/PetShopFatec/PetShopFatec.Web/PetShopFatec.Web.csproj": {}
+    "/Users/emersonmouco/Documents/GitHub/mouco/PetShopFatec/PetShopFatec.Web/PetShopFatec.Web.csproj": {}
   },
   "projects": {
-    "/Users/emersonmouco/Documents/Fatec/PetShopFatec/PetShopFatec.Web/PetShopFatec.Web.csproj": {
+    "/Users/emersonmouco/Documents/GitHub/mouco/PetShopFatec/PetShopFatec.Web/PetShopFatec.Web.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/emersonmouco/Documents/Fatec/PetShopFatec/PetShopFatec.Web/PetShopFatec.Web.csproj",
+        "projectUniqueName": "/Users/emersonmouco/Documents/GitHub/mouco/PetShopFatec/PetShopFatec.Web/PetShopFatec.Web.csproj",
         "projectName": "PetShopFatec.Web",
-        "projectPath": "/Users/emersonmouco/Documents/Fatec/PetShopFatec/PetShopFatec.Web/PetShopFatec.Web.csproj",
+        "projectPath": "/Users/emersonmouco/Documents/GitHub/mouco/PetShopFatec/PetShopFatec.Web/PetShopFatec.Web.csproj",
         "packagesPath": "/Users/emersonmouco/.nuget/packages/",
-        "outputPath": "/Users/emersonmouco/Documents/Fatec/PetShopFatec/PetShopFatec.Web/obj/",
+        "outputPath": "/Users/emersonmouco/Documents/GitHub/mouco/PetShopFatec/PetShopFatec.Web/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/emersonmouco/.nuget/NuGet/NuGet.Config"

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/emersonmouco/Documents/Fatec/PetShopFatec/PetShopFatec.IdentityServer/PetShopFatec.IdentityServer.csproj": {}
+    "/Users/emersonmouco/Documents/GitHub/mouco/PetShopFatec/PetShopFatec.IdentityServer/PetShopFatec.IdentityServer.csproj": {}
   },
   "projects": {
-    "/Users/emersonmouco/Documents/Fatec/PetShopFatec/PetShopFatec.IdentityServer/PetShopFatec.IdentityServer.csproj": {
+    "/Users/emersonmouco/Documents/GitHub/mouco/PetShopFatec/PetShopFatec.IdentityServer/PetShopFatec.IdentityServer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/emersonmouco/Documents/Fatec/PetShopFatec/PetShopFatec.IdentityServer/PetShopFatec.IdentityServer.csproj",
+        "projectUniqueName": "/Users/emersonmouco/Documents/GitHub/mouco/PetShopFatec/PetShopFatec.IdentityServer/PetShopFatec.IdentityServer.csproj",
         "projectName": "PetShopFatec.IdentityServer",
-        "projectPath": "/Users/emersonmouco/Documents/Fatec/PetShopFatec/PetShopFatec.IdentityServer/PetShopFatec.IdentityServer.csproj",
+        "projectPath": "/Users/emersonmouco/Documents/GitHub/mouco/PetShopFatec/PetShopFatec.IdentityServer/PetShopFatec.IdentityServer.csproj",
         "packagesPath": "/Users/emersonmouco/.nuget/packages/",
-        "outputPath": "/Users/emersonmouco/Documents/Fatec/PetShopFatec/PetShopFatec.IdentityServer/obj/",
+        "outputPath": "/Users/emersonmouco/Documents/GitHub/mouco/PetShopFatec/PetShopFatec.IdentityServer/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/emersonmouco/.nuget/NuGet/NuGet.Config"

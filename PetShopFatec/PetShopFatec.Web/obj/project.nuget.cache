@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4cG1rGrhiVA1taRFu13ngKtcKIfG6RXLbpPQ/KWT/WjwiALHfONKzU6YBfhf8LWwJploUyQ+fKtbMJmCMryyog==",
+  "dgSpecHash": "MHHRtnLVQVaYxmAwlw83gBo2JkueOFQuxFzi45U94QzEBsh9JkIPfnZlR+ROxnD+HmAw2m7pshoEjvzp9PiEvA==",
   "success": true,
-  "projectFilePath": "/Users/emersonmouco/Documents/Fatec/PetShopFatec/PetShopFatec.Web/PetShopFatec.Web.csproj",
+  "projectFilePath": "/Users/emersonmouco/Documents/GitHub/mouco/PetShopFatec/PetShopFatec.Web/PetShopFatec.Web.csproj",
   "expectedPackageFiles": [
     "/Users/emersonmouco/.nuget/packages/automapper/12.0.0/automapper.12.0.0.nupkg.sha512",
     "/Users/emersonmouco/.nuget/packages/automapper.extensions.microsoft.dependencyinjection/12.0.0/automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",

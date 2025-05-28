@@ -9,89 +9,89 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = PetShopFatec.Web
 build_property.RootNamespace = PetShopFatec.Web
-build_property.ProjectDir = /Users/emersonmouco/Documents/Fatec/PetShopFatec/PetShopFatec.Web/
+build_property.ProjectDir = /Users/emersonmouco/Documents/GitHub/mouco/PetShopFatec/PetShopFatec.Web/
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = /Users/emersonmouco/Documents/Fatec/PetShopFatec/PetShopFatec.Web
+build_property.MSBuildProjectDirectory = /Users/emersonmouco/Documents/GitHub/mouco/PetShopFatec/PetShopFatec.Web
 build_property._RazorSourceGeneratorDebug = 
 
-[/Users/emersonmouco/Documents/Fatec/PetShopFatec/PetShopFatec.Web/Views/Brand/CreateBrand.cshtml]
+[/Users/emersonmouco/Documents/GitHub/mouco/PetShopFatec/PetShopFatec.Web/Views/Brand/CreateBrand.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQnJhbmQvQ3JlYXRlQnJhbmQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/emersonmouco/Documents/Fatec/PetShopFatec/PetShopFatec.Web/Views/Brand/DeleteBrand.cshtml]
+[/Users/emersonmouco/Documents/GitHub/mouco/PetShopFatec/PetShopFatec.Web/Views/Brand/DeleteBrand.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQnJhbmQvRGVsZXRlQnJhbmQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/emersonmouco/Documents/Fatec/PetShopFatec/PetShopFatec.Web/Views/Brand/Index.cshtml]
+[/Users/emersonmouco/Documents/GitHub/mouco/PetShopFatec/PetShopFatec.Web/Views/Brand/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQnJhbmQvSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/emersonmouco/Documents/Fatec/PetShopFatec/PetShopFatec.Web/Views/Brand/UpdateBrand.cshtml]
+[/Users/emersonmouco/Documents/GitHub/mouco/PetShopFatec/PetShopFatec.Web/Views/Brand/UpdateBrand.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQnJhbmQvVXBkYXRlQnJhbmQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/emersonmouco/Documents/Fatec/PetShopFatec/PetShopFatec.Web/Views/Category/CreateCategory.cshtml]
+[/Users/emersonmouco/Documents/GitHub/mouco/PetShopFatec/PetShopFatec.Web/Views/Category/CreateCategory.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2F0ZWdvcnkvQ3JlYXRlQ2F0ZWdvcnkuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/emersonmouco/Documents/Fatec/PetShopFatec/PetShopFatec.Web/Views/Category/DeleteCategory.cshtml]
+[/Users/emersonmouco/Documents/GitHub/mouco/PetShopFatec/PetShopFatec.Web/Views/Category/DeleteCategory.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2F0ZWdvcnkvRGVsZXRlQ2F0ZWdvcnkuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/emersonmouco/Documents/Fatec/PetShopFatec/PetShopFatec.Web/Views/Category/Index.cshtml]
+[/Users/emersonmouco/Documents/GitHub/mouco/PetShopFatec/PetShopFatec.Web/Views/Category/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2F0ZWdvcnkvSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/emersonmouco/Documents/Fatec/PetShopFatec/PetShopFatec.Web/Views/Category/UpdateCategory.cshtml]
+[/Users/emersonmouco/Documents/GitHub/mouco/PetShopFatec/PetShopFatec.Web/Views/Category/UpdateCategory.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2F0ZWdvcnkvVXBkYXRlQ2F0ZWdvcnkuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/emersonmouco/Documents/Fatec/PetShopFatec/PetShopFatec.Web/Views/Home/Index.cshtml]
+[/Users/emersonmouco/Documents/GitHub/mouco/PetShopFatec/PetShopFatec.Web/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/emersonmouco/Documents/Fatec/PetShopFatec/PetShopFatec.Web/Views/Home/Privacy.cshtml]
+[/Users/emersonmouco/Documents/GitHub/mouco/PetShopFatec/PetShopFatec.Web/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/emersonmouco/Documents/Fatec/PetShopFatec/PetShopFatec.Web/Views/Product/CreateProduct.cshtml]
+[/Users/emersonmouco/Documents/GitHub/mouco/PetShopFatec/PetShopFatec.Web/Views/Product/CreateProduct.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZHVjdC9DcmVhdGVQcm9kdWN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/emersonmouco/Documents/Fatec/PetShopFatec/PetShopFatec.Web/Views/Product/DeleteProduct.cshtml]
+[/Users/emersonmouco/Documents/GitHub/mouco/PetShopFatec/PetShopFatec.Web/Views/Product/DeleteProduct.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZHVjdC9EZWxldGVQcm9kdWN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/emersonmouco/Documents/Fatec/PetShopFatec/PetShopFatec.Web/Views/Product/Index.cshtml]
+[/Users/emersonmouco/Documents/GitHub/mouco/PetShopFatec/PetShopFatec.Web/Views/Product/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZHVjdC9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/emersonmouco/Documents/Fatec/PetShopFatec/PetShopFatec.Web/Views/Product/UpdateProduct.cshtml]
+[/Users/emersonmouco/Documents/GitHub/mouco/PetShopFatec/PetShopFatec.Web/Views/Product/UpdateProduct.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZHVjdC9VcGRhdGVQcm9kdWN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/emersonmouco/Documents/Fatec/PetShopFatec/PetShopFatec.Web/Views/Shared/Error.cshtml]
+[/Users/emersonmouco/Documents/GitHub/mouco/PetShopFatec/PetShopFatec.Web/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/emersonmouco/Documents/Fatec/PetShopFatec/PetShopFatec.Web/Views/Shared/_LoginPartial.cshtml]
+[/Users/emersonmouco/Documents/GitHub/mouco/PetShopFatec/PetShopFatec.Web/Views/Shared/_LoginPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19Mb2dpblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/emersonmouco/Documents/Fatec/PetShopFatec/PetShopFatec.Web/Views/Shared/_ValidationScriptsPartial.cshtml]
+[/Users/emersonmouco/Documents/GitHub/mouco/PetShopFatec/PetShopFatec.Web/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/emersonmouco/Documents/Fatec/PetShopFatec/PetShopFatec.Web/Views/_ViewImports.cshtml]
+[/Users/emersonmouco/Documents/GitHub/mouco/PetShopFatec/PetShopFatec.Web/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/emersonmouco/Documents/Fatec/PetShopFatec/PetShopFatec.Web/Views/_ViewStart.cshtml]
+[/Users/emersonmouco/Documents/GitHub/mouco/PetShopFatec/PetShopFatec.Web/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/emersonmouco/Documents/Fatec/PetShopFatec/PetShopFatec.Web/Views/Shared/_Layout.cshtml]
+[/Users/emersonmouco/Documents/GitHub/mouco/PetShopFatec/PetShopFatec.Web/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-ubjzl310zj
