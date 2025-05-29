@@ -1,0 +1,75 @@
+/* Estilos gerais para o corpo da página */
+body {
+    font-family: sans-serif; /* Define uma fonte básica */
+    line-height: 1.6; /* Espaçamento entre linhas para melhor leitura */
+    margin: 0; /* Remove margens padrão do navegador */
+    padding: 0; /* Remove preenchimentos padrão do navegador */
+    background-color: #f4f4f4; /* Cor de fundo cinza claro */
+    color: #333; /* Cor do texto principal (cinza escuro) */
+}
+
+/* Estilos para o cabeçalho */
+header {
+    background-color: #333; /* Fundo escuro para o cabeçalho */
+    color: #fff; /* Texto branco no cabeçalho */
+    padding: 20px; /* Preenchimento interno */
+    text-align: center; /* Centraliza o texto */
+}
+
+header h1 {
+    margin: 0; /* Remove margem do h1 para grudar no topo do header */
+}
+
+/* Estilos para a barra de navegação */
+nav {
+    background-color: #555; /* Cor de fundo para a navegação */
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: #fff; /* Cor dos links */
+    margin: 0 15px; /* Espaçamento entre os links */
+    text-decoration: none; /* Remove o sublinhado dos links */
+}
+
+nav a:hover {
+    color: #f0a500; /* Muda a cor do link ao passar o mouse */
+}
+
+/* Estilos para o conteúdo principal */
+main {
+    padding: 20px; /* Espaçamento interno nas laterais */
+}
+
+section {
+    background-color: #fff; /* Fundo branco para as seções */
+    margin-bottom: 20px; /* Margem abaixo de cada seção */
+    padding: 15px; /* Preenchimento interno das seções */
+    border-radius: 5px; /* Bordas arredondadas */
+}
+
+h2 {
+    color: #333; /* Cor para os subtítulos */
+}
+
+ul {
+    list-style-type: square; /* Muda o marcador da lista para quadrado */
+}
+
+img {
+    max-width: 100%; /* Garante que a imagem não ultrapasse a largura do contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+    display: block; /* Remove espaço extra abaixo da imagem */
+    margin: 15px auto; /* Centraliza a imagem com margem */
+    border: 3px solid #ccc; /* Adiciona uma borda simples */
+}
+
+/* Estilos para o rodapé */
+footer {
+    text-align: center; /* Centraliza o texto */
+    padding: 15px; /* Preenchimento interno */
+    background-color: #333; /* Fundo escuro para o rodapé */
+    color: #fff; /* Texto branco no rodapé */
+    margin-top: 30px; /* Espaço acima do rodapé */
+}
