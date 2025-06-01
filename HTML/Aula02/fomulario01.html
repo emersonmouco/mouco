@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<h1>Meu primeiro formulário</h1>
+		<!--
+			Os formulários são compostos por diversos elementos que são:
+
+			<input> -> define o campo de entrada de dados pelo usuário
+			<textarea> -> define uma área de texto, que podem ter várias linhas de texto
+			<button> -> define um botão no forms
+			<select> -> define uma caixa de seleção, lista selecionável - drop-down
+			<option> -> define uma lista de opções dentro de um drop-down select
+			<optgroup> -> define um grupo de opções
+			<fieldset> -> define alguns campos
+			<label> define um rótulo/legenda para um campo antes da caixa de texto (geralmente)
+			
+		-->
+
+		<!-- 
+		<form action="#" method="post">
+			<p>
+				<label for="nome">Nome: </label>
+				<input type="text" id="nome" name="nome" required="true" placeholder="Informe seu nome"/>
+			</p>
+			<p>
+				<label for="email">Email: </label>
+				<input type="email" id="email" name="email" required="true" placeholder="Informe seu email"/>
+			</p>
+			<p class="button">
+				<button type="submit">Enviar</button>
+			</p>
+		</form>
+		-->
+
+		<form>
+			<p>
+				<label for="search">search: </label>
+				<input id="search" name="search" type="search" />
+			</p>
+			<p>
+				<label for="text">text: </label>
+				<input id="text" name="text" type="text" />
+			</p>
+			<p>
+				<label for="date">date: </label>
+				<input id="date" name="date" type="datetime-local" />
+			</p>
+			<p>
+				<label for="radio">radio: </label>
+				<input id="radio" name="radio" type="radio" />
+			</p>
+			<p>
+				<label for="checkbox">checkbox: </label>
+				<input id="checkbox" name="checkbox" type="checkbox" />
+			</p>
+			<p><input type="submit" value="submit" /></p>
+			<p><input type="button" value="button" /></p>
+		</form>
+
+	</body>
+</html>

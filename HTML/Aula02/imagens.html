@@ -1,0 +1,75 @@
+<!Doctype html>
+<html>
+	<head>
+		<style>
+			img{
+				height: 300px;
+			}
+			.por_do_sol{
+				width: 300px;
+			}
+			.por_do_sol2{
+				width: 500px;
+			}
+			table{
+				width: 300px;
+				border-width: 1px;
+				border-style: solid;
+			}
+			td{
+				border-style: solid;
+				border-width: 1px;
+				padding: 10px;
+				background-color: #ddd;
+			}
+		</style>
+	</head>
+	<body>
+		<p>Primeira imagem</p>
+		<!--
+			A tag img é utilizada para inserirmos imagens à nossa página web
+			src = é o atributo que define o caminho da imagem 
+					geralmente as imagens estarão armazenadas em uma pasta 
+					separada chamada imagens ou imgs
+			alt = um texto alternativo que será lido pelo navegador/leitor de telas
+					para explicar do que se trata aquela imagem caso não carregue, mas 
+					também como uma forma de acessibilidade
+			max-width: 100% 
+						geralmente utiliza-se max-width: 100% para que ela não ultrapasse
+						o tamanho máximo de um elemento em que ela está inserida, por exemplo,
+						uma section.
+		-->
+		<img 
+			src="imgs/por-do-sol.jpg"
+			alt="Por do sol nas montanhas"
+			class="por_do_sol"
+		/>
+		<img 
+			src="imgs/por-do-sol.jpg"
+			alt="Por do sol nas montanhas"
+			class="por_do_sol2"
+		/>
+		
+		<h1>Tabela</h1>
+
+		<table>
+			<tr> <!-- tr = linhas -->
+				<td>Senac</td> <!-- td = colunas -->
+				<td>123</td> <!-- td = colunas -->
+			</tr>
+			<tr>
+				<td>Senac Tres lagoas</td>
+				<td>321</td>
+			</tr>
+		</table>
+		
+
+		<!--
+			Formatos: SVG e PNG
+			SVG e PNG são formatos geralmente utilizados para imagens que não 
+			possuem fundo (o fundo se mescla com o do site). Sempre que possível
+			utilize SVG, eles podem escalar infinitamente sem perder qualidade, resolução 
+			e geralmente são menores em tamanho (bytes).
+		-->
+	</body>
+</html>
