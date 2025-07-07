@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog de Viagens - Explore o Mundo</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .card-img-top {
+            height: 200px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="#">✈️ Blog de Viagens</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Destinos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Dicas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container mt-5">
+        <div class="row">
+
+            <div class="col-md-8">
+                <h1 class="mb-4">Postagens Recentes</h1>
+
+                <div class="card mb-4 shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1550340499-a6c60fc8287c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        class="card-img-top" alt="Foto de Paris">
+                    <div class="card-body">
+                        <h5 class="card-title">Explorando as Ruas de Paris</h5>
+                        <p class="card-text text-muted">Publicado em 01 de Julho, 2025</p>
+                        <p class="card-text">Uma viagem inesquecível pela cidade luz. Descubra os melhores cafés, museus
+                            e pontos turísticos que você não pode perder.</p>
+                        <a href="#" class="btn btn-primary">Leia Mais &rarr;</a>
+                    </div>
+                </div>
+
+                <div class="card mb-4 shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1539037116277-4db20889f2d4?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=1200"
+                        class="card-img-top" alt="Foto de Tóquio">
+                    <div class="card-body">
+                        <h5 class="card-title">A vibrante cultura de Tóquio</h5>
+                        <p class="card-text text-muted">Publicado em 28 de Junho, 2025</p>
+                        <p class="card-text">Da tradição milenar à modernidade dos arranha-céus, Tóquio é uma cidade de
+                            contrastes fascinantes. Veja nosso roteiro de 5 dias.</p>
+                        <a href="#" class="btn btn-primary">Leia Mais &rarr;</a>
+                    </div>
+                </div>
+
+                <div class="card mb-4 shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=1200"
+                        class="card-img-top" alt="Montanhas nevadas">
+                    <div class="card-body">
+                        <h5 class="card-title">Aventura nos Alpes Suíços</h5>
+                        <p class="card-text text-muted">Publicado em 25 de Junho, 2025</p>
+                        <p class="card-text">Para os amantes de natureza e esportes radicais, os Alpes Suíços oferecem
+                            paisagens de tirar o fôlego e trilhas desafiadoras.</p>
+                        <a href="#" class="btn btn-primary">Leia Mais &rarr;</a>
+                    </div>
+                </div>
+
+                <nav aria-label="Navegação de página das postagens">
+                    <ul class="pagination justify-content-center">
+                        <li class="page-item disabled">
+                            <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Anterior</a>
+                        </li>
+                        <li class="page-item active" aria-current="page">
+                            <a class="page-link" href="#">1</a>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#">Próxima</a>
+                        </li>
+                    </ul>
+                </nav>
+
+            </div>
+
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">Pesquisar</div>
+                    <div class="card-body">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Buscar no blog...">
+                            <button class="btn btn-secondary" type="button">Ir!</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">Categorias</div>
+                    <div class="card-body">
+                        <ul class="list-unstyled mb-0">
+                            <li><a href="#">Europa</a></li>
+                            <li><a href="#">Ásia</a></li>
+                            <li><a href="#">Américas</a></li>
+                            <li><a href="#">Dicas de Mochilão</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-white text-center text-muted py-4 mt-5 border-top">
+        <div class="container">
+            <p class="mb-0">© 2025 Blog de Viagens. Todos os direitos reservados.</p>
+            <p class="mb-0">Um exemplo de site criado com Bootstrap.</p>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho de Compras - Sua Loja</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Sua Loja</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Produtos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contato</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#"><i class="bi bi-cart"></i> Carrinho</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-5">
+        <h2 class="mb-4">Seu Carrinho de Compras</h2>
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="table-responsive">
+                    <table class="table align-middle">
+                        <thead>
+                            <tr>
+                                <th scope="col" colspan="2">Produto</th>
+                                <th scope="col">Preço Unitário</th>
+                                <th scope="col" class="text-center">Quantidade</th>
+                                <th scope="col" class="text-end">Subtotal</th>
+                                <th scope="col"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td style="width: 100px;">
+                                    <img src="https://picsum.photos/id/1025/100/100" class="img-fluid rounded"
+                                        alt="Imagem do Produto 1">
+                                </td>
+                                <td>
+                                    <strong>Nome do Produto Incrível</strong>
+                                    <small class="d-block text-muted">SKU: 12345</small>
+                                </td>
+                                <td>R$ 299,90</td>
+                                <td class="text-center">
+                                    <input type="number" class="form-control text-center" value="1" min="1"
+                                        style="width: 70px; margin: auto;">
+                                </td>
+                                <td class="text-end">R$ 299,90</td>
+                                <td class="text-end">
+                                    <button class="btn btn-outline-danger btn-sm"><i class="bi bi-trash"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="https://picsum.photos/id/1062/100/100" class="img-fluid rounded"
+                                        alt="Imagem do Produto 2">
+                                </td>
+                                <td>
+                                    <strong>Outro Produto Fantástico</strong>
+                                    <small class="d-block text-muted">SKU: 67890</small>
+                                </td>
+                                <td>R$ 199,90</td>
+                                <td class="text-center">
+                                    <input type="number" class="form-control text-center" value="2" min="1"
+                                        style="width: 70px; margin: auto;">
+                                </td>
+                                <td class="text-end">R$ 399,80</td>
+                                <td class="text-end">
+                                    <button class="btn btn-outline-danger btn-sm"><i class="bi bi-trash"></i></button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="d-flex justify-content-between mt-3">
+                    <a href="#" class="btn btn-secondary"><i class="bi bi-arrow-left"></i> Continuar Comprando</a>
+                    <button class="btn btn-info"><i class="bi bi-arrow-clockwise"></i> Atualizar Carrinho</button>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="card bg-light">
+                    <div class="card-body">
+                        <h5 class="card-title">Resumo do Pedido</h5>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                Subtotal
+                                <span>R$ 699,70</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                Frete
+                                <span>R$ 25,00</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center fw-bold">
+                                Total
+                                <span>R$ 724,70</span>
+                            </li>
+                        </ul>
+                        <div class="d-grid mt-3">
+                            <a href="#" class="btn btn-primary btn-lg">Finalizar Compra <i
+                                    class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mt-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Cupom de Desconto</h5>
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Insira o código do cupom">
+                            <button class="btn btn-outline-secondary" type="button">Aplicar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white text-center p-3 mt-5">
+        <p>&copy; 2025 Sua Loja. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
