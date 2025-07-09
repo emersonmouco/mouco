@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Loja Senac - Bem-vindo!</title>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+		
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="custom.css">
+	</head>
+
+	<body>
+		
+		<!-- 
+			menu navbar 
+		 	Navbar vem de "Navigation Bar"
+			ou seja, Barra de Navegação/Menu de navegação do site
+			aquele menu que fica em cima nos sites
+		-->
+		<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #074a9d;">
+			<div class="container">
+				<a class="navbar-brand" href="#">Senac Store</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+					data-bs-target="#navbarNav"	aria-controls="#navbarNav"
+					aria-expanded="false"
+					arial-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				
+				<div class="collapse navbar-collapse" id="navbarNav">
+				
+					<ul class="navbar-nav ms-auto">
+						<li class="nav-item">
+							<a class="nav-link active" aria-current="page" href="index.html">Início</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="produtos.html">Produtos</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="contato.html">Contato</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="carrinho.html"><i class="bi bi-cart"></i>Carrinho</a>
+						</li>
+					</ul>
+					
+				</div>
+			</div>
+		</nav>
+		
+		<header id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+
+			<div class="carousel-indicators">
+				<button type="button" data-bs-target="#myCarousel" 
+				data-bs-slide-to="0" class="active" aria-current="true"
+				aria-label="Slide 1"></button>
+				<button type="button" data-bs-target="#myCarousel"
+				data-bs-slide-to="1" aria-label="Slide 2"></button>
+				<button type="button" data-bs-target="#myCarousel"
+				data-bs-slide-to="2" aria-label="Slide 3"></button>
+			</div>
+
+			<div class="carousel-inner">
+				<div class="carousel-item active" 
+				style="background-image: url('https://images.unsplash.com/photo-1445205170230-053b83016050?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
+					<div class="carousel-caption d-none d-md-block">
+						<h5>Promoções</h5>
+						<p>Descontos de até 50% em produtos selecionados. Aproveite!</p>
+						<a href="#" class="btn btn-primary">Ver ofertas</a>
+					</div>
+				</div>
+				<div class="carousel-item" 
+				style="background-image: url('https://images.unsplash.com/photo-1470309864661-68328b2cd0a5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
+					<div class="carousel-caption d-none d-md-block">
+						<h5>Novidades na loja</h5>
+						<p>Confira os últimos lançamentos que acabaram de chegar!</p>
+						<a href="#" class="btn btn-primary">Conferir agora</a>
+					</div>
+				</div>
+				<div class="carousel-item" 
+				style="background-image: url('https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
+					<div class="carousel-caption d-none d-md-block">
+						<h5>Frete grátis</h5>
+						<p>Para todas as compras acima de R$ 199,90 frete grátis para toda região.</p>
+						<a href="#" class="btn btn-primary">Saiba mais</a>
+					</div>
+				</div>
+			</div>
+			
+			<button class="carousel-control-prev" type="button" data-bs-target="#myCarousel"
+				data-bs-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Anterior</span>
+			</button>
+
+			<button class="carousel-control-next" type="button" data-bs-target="#myCarousel"
+				data-bs-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Próximo</span>
+			</button>
+
+		</header>
+		
+		<div class="container my-5">
+			<section class="text-center mb-5">
+				<h2 class="mb-4">Compre por categoria</h2>
+				<div class="row">
+					<div class="col-lg-3 col-md-6 mb-4">
+						<div class="card shadow-sm h-100">
+							<img src="https://classicbr.com/cdn/shop/files/Pack_Casual_3_Classic_s_ae491119-babb-401f-8ea7-9660618599e4.png?v=1744659718&width=1206" 
+							class="card-img-top" alt="Categoria 1"
+							height="300px" width="200px">
+							<div class="card-body">
+								<h5 class="card-title">Camisetas</h5>
+								<a href="#" class="btn btn-outline-primary stretched-link">Ver produtos</a>
+							</div> 
+						</div>
+					</div>
+
+					<div class="col-lg-3 col-md-6 mb-4">
+						<div class="card shadow-sm h-100">
+							<img src="https://m.media-amazon.com/images/I/61XaMGdCCmL._AC_SX679_.jpg" 
+							class="card-img-top" alt="Categoria 2"
+							height="300px" width="200px">
+							<div class="card-body">
+								<h5 class="card-title">Calças</h5>
+								<a href="#" class="btn btn-outline-primary stretched-link">Ver produtos</a>
+							</div> 
+						</div>
+					</div>
+
+					<div class="col-lg-3 col-md-6 mb-4">
+						<div class="card shadow-sm h-100">
+							<img src="https://rauffstein.com/cdn/shop/files/camisa-social-de-algodao-masculina-branca-rauffstein-rs142-11_800x.webp?v=1740414850" 
+							class="card-img-top" alt="Categoria 3"
+							height="300px" width="200px">
+							<div class="card-body">
+								<h5 class="card-title">Camisas</h5>
+								<a href="#" class="btn btn-outline-primary stretched-link">Ver produtos</a>
+							</div> 
+						</div>
+					</div>
+
+					<div class="col-lg-3 col-md-6 mb-4">
+						<div class="card shadow-sm h-100">
+							<img src="https://www.heroicas.com.br/wp-content/uploads/2023/08/Acessorios-Femininos-Essenciais-1.png" 
+							class="card-img-top" alt="Categoria 4"
+							height="300px" width="200px">
+							<div class="card-body">
+								<h5 class="card-title">Acessórios</h5>
+								<a href="#" class="btn btn-outline-primary stretched-link">Ver produtos</a>
+							</div> 
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section>
+				<h2 class="text-center mb-4">Produtos em destaque</h2>
+				<div class="row row-cols-1 row-cols-md-3 g-4">
+					<div class="col">
+						<div class="card h-100 shadow-sm">
+							<span class="badge bg-danger position-absolute top-0 start-0 m-2">Mais vendido</span>
+							<img src="https://m.media-amazon.com/images/I/51Qy5SLkusL._AC_SL1200_.jpg"
+								class="card-img-top" alt="Camiseta do São Paulo FC"
+								height="400px" width="350px">
+							<div class="card-body">
+								<h5 class="card-title">Camiseta São Paulo FC</h5>
+								<p class="card-text">A camiseta mais pesada do futebol, compre para 
+									torcer para o melhor time do mundo!
+								</p>
+								<h6>R$ 299,90</h6>
+								<a href="#" class="btn btn-primary">Ver detalhes</a>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="card h-100 shadow-sm">
+							<img src="https://rauffstein.com/cdn/shop/files/camisa-social-de-algodao-masculina-preta-rauffstein-rs142-3_800x.webp?v=1740414749"
+								class="card-img-top" alt="Camisa social masculina"
+								height="400px" width="350px">
+							<div class="card-body">
+								<h5 class="card-title">Camisa social masculina</h5>
+								<p class="card-text">Camisa social preta masculina</p>
+								<br />
+								<h6>R$ 159,90</h6>
+								<a href="#" class="btn btn-primary">Ver detalhes</a>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="card h-100 shadow-sm">
+							<span class="badge bg-color position-absolute top-0 start-0 m-2">Novidade</span>
+							<img src="https://www.piuka.com.br/media/catalog/product/c/o/colar-piuka-cecilia-3-voltas-elos-malha-de-metal-folheada-a-ouro-18k.jpg?optimize=low&bg-color=255,255,255&fit=bounds&height=700&width=700&canvas=700:700"
+								class="card-img-top" alt="Colar triplo dourado"
+								height="400px" width="350px">
+							<div class="card-body">
+								<h5 class="card-title">Colar triplo dourado</h5>
+								<p class="card-text">Colar triplo banhado a ouro 18K</p>
+								<br />
+								<h6>R$ 169,90</h6>
+								<a href="#" class="btn btn-primary">Ver detalhes</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		</div>
+
+		<footer class="text-white text-center p-3 mt-5" style="background-color: #074a9d;">
+			<div class="container" >
+				<p>&copy; 2025 Senac Store. Todos os direitos reservados.</p>
+			</div>
+		</footer>
+
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+	</body>
+</html>
