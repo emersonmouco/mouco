@@ -48,7 +48,7 @@ def criar_tabelas(conn):
 		cursor.execute("""
         CREATE TABLE IF NOT EXISTS cliente(
             id_cliente INT AUTO_INCREMENT PRIMARY KEY,
-            cpf_cliente VARCHAR(20) NOT NULL UNIQUE,
+            cpf_cliente VARCHAR(40) NOT NULL UNIQUE,
             email_cliente VARCHAR(100),
             senha_cliente VARCHAR(100),
             nivel_cliente INT DEFAULT 1,
@@ -159,6 +159,7 @@ def listar_clientes(conn):
                 c.id_cliente, 
                 c.cpf_cliente, 
                 c.email_cliente,
+				c.senha_cliente,
                 c.nivel_cliente
             FROM pessoa p
             JOIN cliente c ON p.id_pessoa = c.id_pessoa

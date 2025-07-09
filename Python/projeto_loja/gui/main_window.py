@@ -7,7 +7,7 @@ from tkinter import messagebox
 from .cliente_window import ClienteWindow
 from .funcionario_window import FuncionarioWindow
 from .marca_window import MarcaWindow
-# from .produto_window import ProdutoWindow
+from .produto_window import ProdutoWindow
 
 # janela principal do sistema
 class MainWindow(tk.Tk):
@@ -55,7 +55,7 @@ class MainWindow(tk.Tk):
 		# e o que será feito após clicarmos nestas opções
 		cadastro_menu.add_command(label="Clientes", command=self.abrir_janela_clientes)
 		cadastro_menu.add_command(label="Funcionários", command=self.abrir_janela_funcionarios)
-		# cadastro_menu.add_command(label="Produtos", command=self.abrir_janela_produtos)
+		cadastro_menu.add_command(label="Produtos", command=self.abrir_janela_produtos)
 		cadastro_menu.add_command(label="Marcas", command=self.abrir_janela_marcas)
 
 		# adiciona uma linha separadora
@@ -83,8 +83,8 @@ class MainWindow(tk.Tk):
 		MarcaWindow(self, self.conn)
 	
 	# abre a janela dos produtos,,
-	# def abrir_janela_produtos(self):
-		# ProdutoWindow(self, self.conn)
+	def abrir_janela_produtos(self):
+		ProdutoWindow(self, self.conn)
 
 	def on_closing(self):
 		# função para fechar a janela, sair do sistema

@@ -17,16 +17,19 @@ class MarcaWindow(tk.Toplevel):
 		# label nome da marca
 		ttk.Label(frame_form, text="Nome: ").grid(row=0, column=0, padx=5, pady=5, sticky="w")
 		# caixa de texto do nome da marca
-		self.entry_nome = ttk.Entry(frame_form, width=40).grid(row=0, column=1, padx=5, pady=5)
+		self.entry_nome = ttk.Entry(frame_form, width=40)
+		self.entry_nome.grid(row=0, column=1, padx=5, pady=5)
 
 		# label da descricao
 		ttk.Label(frame_form, text="Descrição: ").grid(row=1, column=0, padx=5, pady=5, sticky="w")
 		# caixa de texto da descrição da marca
-		self.entry_descricao = ttk.Entry(frame_form, widget=40).grid(row=1, column=1, padx=5, pady=5)
+		self.entry_descricao = ttk.Entry(frame_form, width=40)
+		self.entry_descricao.grid(row=1, column=1, padx=5, pady=5)
 
 
 		# botoes de ações
-		frame_botoes = ttk.Frame(self).pack(pady=5)
+		frame_botoes = ttk.Frame(self)
+		frame_botoes.pack(pady=10)
 
 		# botao de cadastrar
 		ttk.Button(frame_botoes, text="Salvar", command=self.cadastrar_marca).pack(side=tk.LEFT, padx=5)
@@ -36,7 +39,8 @@ class MarcaWindow(tk.Toplevel):
 		ttk.Button(frame_botoes, text="Limpar", command=self.limpar_formulario).pack(side=tk.LEFT, padx=5)
 
 		# tabela de visualização de marcas cadastradas
-		frame_lista = ttk.LabelFrame(self, text="Marcas cadastradas").pack(padx=10, pady=10, fill="both", expand=True)
+		frame_lista = ttk.LabelFrame(self, text="Marcas cadastradas")
+		frame_lista.pack(padx=10, pady=10, fill="both", expand=True)
 
 		self.tree = ttk.Treeview(frame_lista, columns=("id","nome", "descrição"), show="headings")
 		self.tree.heading("id", text="ID");self.tree.column("id", width=40)
@@ -66,7 +70,7 @@ class MarcaWindow(tk.Toplevel):
 			messagebox.showinfo("Sucesso", f"Marca {acao} com sucesso!")
 
 			self.limpar_formulario()
-			self.carregar_marca()
+			self.carregar_marcas()
 		
 		except Exception as e:
 			messagebox.showerror("Erro ao salvar", f"Não foi possível salvar a marca. \nErro: {e}")
@@ -83,7 +87,7 @@ class MarcaWindow(tk.Toplevel):
 	def limpar_formulario(self):
 		self.id_selecionado = None
 		self.entry_nome.delete(0, tk.END)
-		self.entry_descricao(0, tk.END)
+		self.entry_descricao.delete(0, tk.END)
 		
 		if self.tree.selection():
 			self.tree.selection_remove(self.tree.selection()[0])
@@ -95,7 +99,7 @@ class MarcaWindow(tk.Toplevel):
 		
 		if messagebox.askyesno("Confirmar exclusão","Tem certeza que deseja excluir esta marca?"):
 			try:
-				db.delete_marca(self.conn, self.id_selecionado)
+				db.excluir_marca(self.conn, self.id_selecionado)
 				messagebox.showinfo("Sucesso", "Marca excluída com sucesso!")
 				self.limpar_formulario()
 				self.carregar_marcas()

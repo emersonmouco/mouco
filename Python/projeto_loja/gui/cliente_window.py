@@ -81,11 +81,11 @@ class ClienteWindow(tk.Toplevel):
 		frame_lista = ttk.LabelFrame(self, text="Clientes Cadastrados")
 		frame_lista.pack(padx=10, pady=10, fill="both", expand=True)
 		
-		self.tree = ttk.Treeview(frame_lista, columns=("id", "nome", "cpf", "endereco", "email", "senha", "nivel"), show="headings")
+		self.tree = ttk.Treeview(frame_lista, columns=("id", "nome", "endereco", "cpf", "email", "senha", "nivel"), show="headings")
 		self.tree.heading("id", text="ID"); self.tree.column("id", width=40)
 		self.tree.heading("nome", text="Nome")
-		self.tree.heading("cpf", text="CPF"); self.tree.column("cpf", width=120)
 		self.tree.heading("endereco", text="Endereço")
+		self.tree.heading("cpf", text="CPF"); self.tree.column("cpf", width=120)
 		self.tree.heading("email", text="Email")
 		self.tree.heading("senha", text="Senha")
 		self.tree.heading("nivel", text="Nível")
@@ -135,18 +135,19 @@ class ClienteWindow(tk.Toplevel):
 		item = self.tree.item(selecionado[0], 'values')
 		self.id_selecionado = item[0]
 		self.entry_nome.delete(0, tk.END); self.entry_nome.insert(0, item[1])
-		self.entry_cpf.delete(0, tk.END); self.entry_cpf.insert(0, item[2])
-		self.entry_email.delete(0, tk.END); self.entry_email.insert(0, item[3])
-		self.entry_senha.delete(0, tk.END); self.entry_senha.insert(0, item[4])
-		self.combo_nivel.delete(0, tk.END); self.combo_nivel.insert(0, item[5])
+		self.entry_endereco.delete(0, tk.END); self.entry_endereco.insert(0, item[2])
+		self.entry_cpf.delete(0, tk.END); self.entry_cpf.insert(0, item[3])
+		self.entry_email.delete(0, tk.END); self.entry_email.insert(0, item[4])
+		self.entry_senha.delete(0, tk.END); self.entry_senha.insert(0, item[5])
+		self.combo_nivel.delete(0, tk.END); self.combo_nivel.insert(0, item[6])
 
 	def limpar_formulario(self):
 		self.id_selecionado = None
 		self.entry_nome.delete(0, tk.END)
 		self.entry_cpf.delete(0, tk.END)
 		self.entry_email.delete(0, tk.END)
-		self.entry_senha.delete(0, tk.END);
-		self.combo_nivel.delete(0, tk.END);
+		self.entry_senha.delete(0, tk.END)
+		self.combo_nivel.delete(0, tk.END)
 		if self.tree.selection():
 			self.tree.selection_remove(self.tree.selection()[0])
 			
@@ -158,7 +159,7 @@ class ClienteWindow(tk.Toplevel):
 		if messagebox.askyesno("Confirmar Exclusão", "Tem certeza que deseja excluir este cliente?"):
 			try:
 				# A lógica de exclusão também foi abstraída.
-				db.delete_cliente(self.conn, self.id_selecionado)
+				db.excluir_cliente(self.conn, self.id_selecionado)
 				messagebox.showinfo("Sucesso", "Cliente excluído com sucesso!")
 				self.limpar_formulario()
 				self.carregar_clientes()
@@ -174,7 +175,7 @@ class ClienteWindow(tk.Toplevel):
 		clientes = db.listar_clientes(self.conn)
 		for cliente in clientes:
 			self.tree.insert("", "end", values=(cliente['id_pessoa'], cliente['nome_pessoa'],
-									   	cliente['endereco_pessoa'], cliente['cpf_cliente'],
+									   	cliente['cpf_cliente'],cliente['endereco_pessoa'],
 										cliente['email_cliente'],cliente['senha_cliente'],
 										cliente['nivel_cliente']))
 	
