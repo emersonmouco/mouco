@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sua Loja - Bem-vindo!</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <style>
+        .product-thumbnail {
+            cursor: pointer;
+            border: 2px solid transparent;
+            transition: border 0.3s;
+        }
+
+        .product-thumbnail:hover,
+        .product-thumbnail.active {
+            border-color: #0d6efd;
+            /* Cor primária do Bootstrap */
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Sua Loja</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Produtos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contato</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="bi bi-cart"></i> Carrinho</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container my-5">
+        <div class="row">
+            <div class="col-md-6">
+                <img id="main-product-image" src="https://picsum.photos/id/1082/600/500" class="img-fluid rounded mb-3"
+                    alt="Imagem principal do produto">
+                <div class="row gx-2">
+                    <div class="col-3">
+                        <img src="https://picsum.photos/id/1082/150/120"
+                            class="img-fluid rounded product-thumbnail active" alt="Thumbnail 1"
+                            onclick="changeImage('https://picsum.photos/id/1082/600/500', this)">
+                    </div>
+                    <div class="col-3">
+                        <img src="https://picsum.photos/id/122/150/120" class="img-fluid rounded product-thumbnail"
+                            alt="Thumbnail 2" onclick="changeImage('https://picsum.photos/id/122/600/500', this)">
+                    </div>
+                    <div class="col-3">
+                        <img src="https://picsum.photos/id/20/150/120" class="img-fluid rounded product-thumbnail"
+                            alt="Thumbnail 3" onclick="changeImage('https://picsum.photos/id/20/600/500', this)">
+                    </div>
+                    <div class="col-3">
+                        <img src="https://picsum.photos/id/453/150/120" class="img-fluid rounded product-thumbnail"
+                            alt="Thumbnail 4" onclick="changeImage('https://picsum.photos/id/453/600/500', this)">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <h2>Fone de Ouvido Bluetooth AuraSound</h2>
+                <div class="mb-2">
+                    <span class="badge bg-primary">MAIS VENDIDO</span>
+                    <span class="badge bg-info text-dark">LANÇAMENTO</span>
+                </div>
+                <div class="d-flex align-items-center mb-2">
+                    <div class="text-warning">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-half"></i>
+                    </div>
+                    <a href="#reviews" class="ms-2"> (128 avaliações)</a>
+                </div>
+
+                <p class="h3 fw-bold text-success">R$ 349,90</p>
+                <p class="text-muted"><del>R$ 499,90</del> (30% de desconto)</p>
+
+                <p class="lead">Som imersivo de alta fidelidade com cancelamento de ruído ativo. Bateria de longa
+                    duração para acompanhar seu ritmo o dia todo.</p>
+
+                <hr>
+
+                <div class="mb-3">
+                    <label for="color-select" class="form-label"><strong>Cor:</strong></label>
+                    <select class="form-select" id="color-select" style="max-width: 200px;">
+                        <option selected>Preto Grafite</option>
+                        <option value="1">Branco Neve</option>
+                        <option value="2">Azul Meia-noite</option>
+                    </select>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label"><strong>Quantidade:</strong></label>
+                    <div class="input-group" style="max-width: 150px;">
+                        <button class="btn btn-outline-secondary" type="button">-</button>
+                        <input type="text" class="form-control text-center" value="1" readonly>
+                        <button class="btn btn-outline-secondary" type="button">+</button>
+                    </div>
+                </div>
+
+                <div class="d-grid gap-2 mt-4">
+                    <button class="btn btn-primary btn-lg" type="button"><i
+                            class="bi bi-cart-plus-fill me-2"></i>Adicionar ao Carrinho</button>
+                    <button class="btn btn-success btn-lg" type="button"><i
+                            class="bi bi-bag-check-fill me-2"></i>Comprar Agora</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-12">
+                <ul class="nav nav-tabs" id="productTabs" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="description-tab" data-bs-toggle="tab"
+                            data-bs-target="#description-pane" type="button" role="tab">Descrição Completa</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="specs-tab" data-bs-toggle="tab" data-bs-target="#specs-pane"
+                            type="button" role="tab">Especificações Técnicas</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="reviews-tab" data-bs-toggle="tab" data-bs-target="#reviews-pane"
+                            type="button" role="tab">Avaliações</button>
+                    </li>
+                </ul>
+                <div class="tab-content pt-4" id="productTabsContent">
+                    <div class="tab-pane fade show active" id="description-pane" role="tabpanel">
+                        <p>O Fone de Ouvido Bluetooth AuraSound foi projetado para quem busca uma experiência sonora sem
+                            igual. Com drivers de 40mm e tecnologia de cancelamento de ruído ativo, você se isola do
+                            mundo exterior e mergulha em suas músicas e podcasts favoritos. Seu design ergonômico e
+                            materiais premium garantem conforto por horas de uso. A conexão Bluetooth 5.2 oferece
+                            estabilidade e baixa latência, perfeita para vídeos e jogos.</p>
+                    </div>
+                    <div class="tab-pane fade" id="specs-pane" role="tabpanel">
+                        <table class="table table-striped">
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Modelo</th>
+                                    <td>AuraSound X100</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Conectividade</th>
+                                    <td>Bluetooth 5.2, Entrada P2 (3.5mm)</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Bateria</th>
+                                    <td>Até 40 horas (sem ANC), Até 25 horas (com ANC)</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Peso</th>
+                                    <td>250g</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Conteúdo da Caixa</th>
+                                    <td>Fone AuraSound, Cabo USB-C, Cabo P2, Estojo de transporte</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="tab-pane fade" id="reviews-pane" role="tabpanel">
+                        <div class="mb-4" id="reviews">
+                            <strong>Ótimo custo-benefício!</strong>
+                            <div class="text-warning mb-1">
+                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                    class="bi bi-star"></i>
+                            </div>
+                            <p>O cancelamento de ruído é muito bom para o preço. A bateria dura bastante. Recomendo!</p>
+                            <small class="text-muted">Por João Silva em 05 de Julho de 2025</small>
+                        </div>
+                        <hr>
+                        <div class="mb-4">
+                            <strong>Qualidade de som impressionante.</strong>
+                            <div class="text-warning mb-1">
+                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                    class="bi bi-star-fill"></i>
+                            </div>
+                            <p>Os graves são potentes e os agudos bem definidos. Valeu cada centavo.</p>
+                            <small class="text-muted">Por Maria Oliveira em 02 de Julho de 2025</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-white text-center p-3 mt-5">
+        <p>&copy; 2025 Sua Loja. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <script>
+        // Função simples para trocar a imagem principal ao clicar em uma miniatura
+        function changeImage(imageSrc, thumbnailElement) {
+            document.getElementById('main-product-image').src = imageSrc;
+
+            // Remove a classe 'active' de todas as miniaturas
+            const thumbnails = document.querySelectorAll('.product-thumbnail');
+            thumbnails.forEach(thumb => thumb.classList.remove('active'));
+
+            // Adiciona a classe 'active' à miniatura clicada
+            thumbnailElement.classList.add('active');
+        }
+    </script>
+</body>
+
+</html>

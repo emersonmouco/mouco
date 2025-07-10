@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Loja Senac - Bem-vindo!</title>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+		
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="custom.css">
+	</head>
+
+	<body>
+		<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #074a9d;">
+			<div class="container">
+				<a class="navbar-brand" href="#">Senac Store</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+					data-bs-target="#navbarNav"	aria-controls="#navbarNav"
+					aria-expanded="false"
+					arial-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				
+				<div class="collapse navbar-collapse" id="navbarNav">
+				
+					<ul class="navbar-nav ms-auto">
+						<li class="nav-item">
+							<a class="nav-link" aria-current="page" href="index.html">Início</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link active" href="produtos.html">Produtos</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="contato.html">Contato</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="carrinho.html"><i class="bi bi-cart"></i>Carrinho</a>
+						</li>
+					</ul>
+					
+				</div>
+			</div>
+		</nav>
+
+		<main class="container my-5">
+			<div class="row">
+				<div class="col-md-6">
+					<img
+						id="main-product-image" 
+						src="https://m.media-amazon.com/images/I/51Qy5SLkusL._AC_SL1200_.jpg"
+						class="img-fluid rounded mb-3"
+						alt="Camiseta São Paulo FC"
+					>
+					<div class="row gx-2">
+						<div class="col-3">
+							<img
+								src="https://m.media-amazon.com/images/I/51Qy5SLkusL._AC_SL1200_.jpg"
+								class="img-fluid rounded product-thumbnail active"
+								alt="Thumbnail 1"
+								onclick="changeImage()"
+							>
+						</div>
+						<div class="col-3">
+							<img
+								src="https://m.media-amazon.com/images/I/51Qy5SLkusL._AC_SL1200_.jpg"
+								class="img-fluid rounded product-thumbnail active"
+								alt="Thumbnail 1"
+								onclick="changeImage()"
+							>
+						</div>
+						<div class="col-3">
+							<img
+								src="https://m.media-amazon.com/images/I/51Qy5SLkusL._AC_SL1200_.jpg"
+								class="img-fluid rounded product-thumbnail active"
+								alt="Thumbnail 1"
+								onclick="changeImage()"
+							>
+						</div>
+						<div class="col-3">
+							<img
+								src="https://m.media-amazon.com/images/I/51Qy5SLkusL._AC_SL1200_.jpg"
+								class="img-fluid rounded product-thumbnail active"
+								alt="Thumbnail 1"
+								onclick="changeImage()"
+							>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-6">
+					<h2>Camiseta São Paulo FC</h2>
+					<div class="mb-2">
+						<span class="badge bg-primary">MAIS VENDIDO</span>
+						<span class="badge bg-info text-dark">LANÇAMENTO</span>
+					</div>
+					<div class="d-flex align-items-center mb-2">
+						<div class="text-warning">
+							<i class="bi bi-star-fill"></i>
+							<i class="bi bi-star-fill"></i>
+							<i class="bi bi-star-fill"></i>
+							<i class="bi bi-star-fill"></i>
+							<i class="bi bi-star-half"></i>
+						</div>
+						<a href="#reviews" class="ms-2">(633 avaliações)</a> 
+					</div>
+
+					<p class="h3 fw-bold text-sucess">R$ 299,90</p>
+					<p class="text-muted"><del>R$ 359,90</del> (17% de desconto)</p>
+
+					<p class="lead">
+						<h4>Do Japão para o coração da torcida tricolor:</h4>
+						Alguns têm um. Poucos tem dois. Mas vencer a Libertadores, 
+						cruzar o mundo e voltar com a taça debaixo do braço — três vezes — 
+						só um clube conseguiu. 
+					</p>
+
+					<hr>
+
+					<div class="mb-3">
+						<label for="color-select" class="form-label">
+							<strong>Cor: </strong>
+						</label>
+						<select class="form-select" id="color-select" style="max-width: 200px;">
+							<option selected>Branca</option>
+							<option value="1">Vermelha</option>
+							<option value="2">Preta</option>
+						</select>
+					</div>
+
+					<div class="mb-3">
+						<label class="form-label"><strong>Quantidade:</strong></label>
+						<div class="input-group" style="max-width: 150px;">
+							<button class="btn btn-outline-secondary" type="button">-</button>
+							<input type="number" class="form-control text-center" value="1" readonly>
+							<button class="btn btn-outline-secondary" type="button">+</button> 
+						</div>
+					</div>
+
+					<div class="d-grid gap-2 mt-4">
+						<button class="btn btn-primary btn-lg" type="button">
+							<i class="bi bi-cart-plus-fill me-2"></i>Adicionar ao carrinho
+						</button>
+						<button class="btn btn-success btn-lg" type="button">
+							<i class="bi bi-bag-check-fill me-2"></i>Comprar agora
+						</button>
+					</div>
+
+				</div>
+
+			</div>
+
+			<div class="row mt-5">
+				<div class="col-12">
+					<ul class="nav nav-tabs" id="productTabs" role="tablist">
+						<li class="nav-item" role="presentation">
+							<button 
+								class="nav-link active"
+								id="description-tab"
+								data-bs-toggle="tab"
+								data-bs-target="#description-pane"
+								type="button"
+								role="tab">
+								Descrição completa
+							</button>
+						</li>
+						<li class="nav-item" role="presentation">
+							<button 
+								class="nav-link" 
+								id="specs-tab"
+								data-bs-toggle="tab"
+								data-bs-target="#specs-pane"
+								type="button"
+								role="tab">
+								Especificações técnicas
+							</button>
+						</li>
+						<li class="nav-item" role="presentation">
+							<button 
+								class="nav-link" 
+								id="reviews-tab"
+								data-bs-toggle="tab"
+								data-bs-target="#reviews-pane"
+								type="button"
+								role="tab">
+								Avaliações
+							</button>
+						</li>
+					</ul>
+					<div class="tab-content pt-4" id="productTabsContent">
+						<div 
+							class="tab-pane fade show active" 
+							id="description-pane"
+							role="tabpanel"
+						>
+							<p>
+								<h4>Do Japão para o coração da torcida tricolor:</h4>
+								Alguns têm um. Poucos tem dois. Mas vencer a Libertadores, 
+								cruzar o mundo e voltar com a taça debaixo do braço — três vezes — 
+								só um clube conseguiu. 
+								A conquista no Japão, em 2005, consagrou o São Paulo FC 
+								Tricampeão Mundial, feito que nenhum outro time brasileiro alcançou.
+								A nova Camisa do São Paulo FC 2025 homenageia os 20 anos 
+								dessa conquista e você pode carregar no peito o orgulho do 
+								Tri Mundial do SPFC. Honre a glória do Tricolor dentro ou fora das 
+								quadras com as novas peças oficiais do clube.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<footer class="text-white text-center p-3 mt-5" style="background-color: #074a9d;">
+			<div class="container" >
+				<p>&copy; 2025 Senac Store. Todos os direitos reservados.</p>
+			</div>
+		</footer>
+
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+	</body>
+</html>

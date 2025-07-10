@@ -45,3 +45,51 @@
 .bg-color{
 	background-color: #1667c9;
 }
+
+.btn-info{
+	background-color: #03045e;
+	color: white;
+}
+
+.btn-info:hover{
+	background-color: #1667c9;
+	color: white;
+}
+
+.btn-info:hover:active{
+	background-color: #358af1;
+	color: white;
+}
+
+.btn-secondary{
+	background-color: #0096c7;
+}
+
+.btn-secondary:hover{
+	background-color: #03045e;
+}
+
+.btn-secondary:hover:active{
+	background-color: #0096c7;
+}
+
+.btn-outline-secondary{
+	background-color: #074a9d;
+	color: white;
+}
+
+.btn-outline-secondary:hover{
+	background-color: #0096c7;
+	color: white;
+}
+
+.product-thumbnail{
+	cursor: pointer;
+	border: 2px solid transparent;
+	transition: border 0.3s;
+}
+
+.product-thumbnail:hover,
+.product-thumbnail.active{
+	border-color: #074a9d;
+}
