@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eletrônicos e Gadgets - Sua Loja</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <style>
+        .product-card .card-actions {
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        .product-card:hover .card-actions {
+            opacity: 1;
+        }
+
+        .list-view .product-card {
+            flex-direction: row;
+            align-items: flex-start;
+        }
+
+        .list-view .product-card .card-img-top {
+            width: 200px;
+            flex-shrink: 0;
+            object-fit: cover;
+            height: 100%;
+            min-height: 230px;
+            border-top-right-radius: 0;
+            border-bottom-left-radius: var(--bs-card-border-radius);
+        }
+
+        .list-view .product-card .d-flex.flex-column {
+            flex: 1;
+            justify-content: space-between;
+        }
+
+        .list-view .product-card .card-body {
+            flex-grow: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container"><a class="navbar-brand" href="#">Sua Loja</a><button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse" data-bs-target="#navbarNav"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Início</a></li>
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Produtos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contato</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><i class="bi bi-cart"></i> Carrinho</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-5">
+        <div class="row">
+            <aside class="col-lg-3 d-none d-lg-block">
+                <h4><i class="bi bi-funnel-fill me-2"></i>Filtros</h4>
+                <hr>
+                <div class="mb-4">
+                    <h5>Categorias</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-decoration-none text-dark">Smartphones</a></li>
+                        <li><a href="#" class="text-decoration-none text-dark">Laptops</a></li>
+                        <li><a href="#" class="text-decoration-none text-dark">Fones de Ouvido</a></li>
+                        <li><a href="#" class="text-decoration-none text-dark">Smartwatches</a></li>
+                    </ul>
+                </div>
+                <div class="mb-4">
+                    <h5>Faixa de Preço</h5><label for="priceRange" class="form-label">Até R$ 5.000,00</label><input
+                        type="range" class="form-range" min="0" max="10000" step="100" id="priceRange">
+                </div>
+                <div class="mb-4">
+                    <h5>Marcas</h5>
+                    <div class="form-check"><input class="form-check-input" type="checkbox" value="" id="brand1"><label
+                            class="form-check-label" for="brand1">TechBrand</label></div>
+                    <div class="form-check"><input class="form-check-input" type="checkbox" value="" id="brand2"><label
+                            class="form-check-label" for="brand2">Connectify</label></div>
+                    <div class="form-check"><input class="form-check-input" type="checkbox" value="" id="brand3"><label
+                            class="form-check-label" for="brand3">AuraSound</label></div>
+                </div>
+                <div class="d-grid"><button class="btn btn-primary">Aplicar Filtros</button></div>
+            </aside>
+
+            <main class="col-lg-9">
+                <header class="d-flex justify-content-between align-items-center mb-4">
+                    <div>
+                        <h2>Eletrônicos e Gadgets</h2>
+                        <p class="mb-0 text-muted">Exibindo 1-8 de 50 resultados</p>
+                    </div>
+                    <div class="d-flex align-items-center"><button class="btn btn-primary d-lg-none me-2" type="button"
+                            data-bs-toggle="offcanvas" data-bs-target="#offcanvasFilters"><i
+                                class="bi bi-funnel-fill"></i> Filtros</button>
+                        <div class="btn-group"><button type="button" id="btn-grid-view"
+                                class="btn btn-outline-secondary active"><i
+                                    class="bi bi-grid-3x3-gap-fill"></i></button><button type="button"
+                                id="btn-list-view" class="btn btn-outline-secondary"><i
+                                    class="bi bi-list-ul"></i></button></div>
+                    </div>
+                </header>
+
+                <div id="product-list" class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                    <div class="col">
+                        <div class="card h-100 product-card shadow-sm">
+                            <img src="https://picsum.photos/id/0/400/400" class="card-img-top" alt="Laptop Moderno">
+                            <div class="d-flex flex-column flex-grow-1">
+                                <div class="card-body">
+                                    <h5 class="card-title">Laptop UltraBook X15</h5>
+                                    <p class="card-text">Performance e design em um só lugar. Perfeito para trabalho e
+                                        lazer.</p>
+                                    <h5 class="fw-bold">R$ 4.899,90</h5>
+                                </div>
+                                <div class="card-footer bg-transparent border-top-0 card-actions">
+                                    <div class="d-grid gap-2 d-flex justify-content-around">
+                                        <a href="#" class="btn btn-sm btn-primary flex-grow-1"
+                                            onclick="showToast('Laptop adicionado!')"><i class="bi bi-cart-plus"></i>
+                                            Carrinho</a>
+                                        <a href="#" class="btn btn-sm btn-outline-secondary"><i
+                                                class="bi bi-heart"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 product-card shadow-sm">
+                            <span class="badge bg-danger position-absolute top-0 end-0 m-2">OFERTA</span>
+                            <img src="https://picsum.photos/id/119/400/400" class="card-img-top" alt="Smartphone">
+                            <div class="d-flex flex-column flex-grow-1">
+                                <div class="card-body">
+                                    <h5 class="card-title">Smartphone Connect 5G</h5>
+                                    <p class="card-text">Câmera de 108MP e tela AMOLED para uma experiência visual
+                                        incrível.</p>
+                                    <h5 class="fw-bold">R$ 2.999,00</h5>
+                                </div>
+                                <div class="card-footer bg-transparent border-top-0 card-actions">
+                                    <div class="d-grid gap-2 d-flex justify-content-around">
+                                        <a href="#" class="btn btn-sm btn-primary flex-grow-1"
+                                            onclick="showToast('Smartphone adicionado!')"><i
+                                                class="bi bi-cart-plus"></i> Carrinho</a>
+                                        <a href="#" class="btn btn-sm btn-outline-secondary"><i
+                                                class="bi bi-heart"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <nav class="mt-5">
+                    <ul class="pagination justify-content-center">
+                        <li class="page-item disabled"><a class="page-link" href="#">Anterior</a></li>
+                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link" href="#">Próximo</a></li>
+                    </ul>
+                </nav>
+            </main>
+        </div>
+    </div>
+
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasFilters">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title"><i class="bi bi-funnel-fill me-2"></i>Filtros</h5><button type="button"
+                class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body"></div>
+    </div>
+    <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+        <div id="cartToast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header"><i class="bi bi-check-circle-fill text-success me-2"></i><strong
+                    class="me-auto">Sucesso!</strong><button type="button" class="btn-close" data-bs-dismiss="toast"
+                    aria-label="Close"></button></div>
+            <div class="toast-body" id="toast-body-message">Produto adicionado ao carrinho.</div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white text-center p-3 mt-5">
+        <p>&copy; 2025 Sua Loja. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <script>
+        // O JavaScript não precisa de nenhuma mudança
+        const filtersContent = document.querySelector('aside').innerHTML;
+        document.querySelector('#offcanvasFilters .offcanvas-body').innerHTML = filtersContent;
+        const productList = document.getElementById('product-list');
+        const btnGridView = document.getElementById('btn-grid-view');
+        const btnListView = document.getElementById('btn-list-view');
+        btnGridView.addEventListener('click', function () {
+            productList.classList.remove('list-view');
+        });
+        btnListView.addEventListener('click', function () {
+            productList.classList.add('list-view');
+        });
+        function showToast(message) {
+            const toastElement = document.getElementById('cartToast');
+            const toastBody = document.getElementById('toast-body-message');
+            toastBody.textContent = message;
+            const toast = new bootstrap.Toast(toastElement);
+            toast.show();
+        }
+    </script>
+</body>
+
+</html>

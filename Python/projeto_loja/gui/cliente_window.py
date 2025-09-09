@@ -1,9 +1,10 @@
 import tkinter as tk # pacote visual
+import ttkbootstrap as ttkB # bootstrap do TKinter
 from tkinter import ttk, messagebox # pacote visual
 from db import database_manager as db # arquivo de conexão com o banco
 from models.cliente import Cliente # model do Cliente para criarmos o objeto Cliente
 
-class ClienteWindow(tk.Toplevel):
+class ClienteWindow(ttkB.Toplevel):
 	def __init__(self, master, conn):
 		super().__init__(master)
 		self.title("Cadastro de Clientes") # titulo da janela
@@ -12,12 +13,15 @@ class ClienteWindow(tk.Toplevel):
 		self.id_selecionado = None # atributo para pegar o id
 
 		# --- Formulário para entrada de dados --- 
-		frame_form = ttk.LabelFrame(self, text="Dados do Cliente")
-		frame_form.pack(padx=10, pady=10, fill="x")
+		frame_form = ttkB.LabelFrame(self, text="Dados do Cliente", padding=(15,10))
+		frame_form.pack(padx=5, pady=5, fill="x")
+
+		# todas as colunas ficarão responsivas de forma igual, com o mesmo "peso"
+		frame_form.columnconfigure(1, weight=1)
 
 		# Label do nome -> onde irá aparecer escrito Nomee
 		# antes do campo de inserção
-		ttk.Label(frame_form, text="Nome: ").grid(row=0, column=0, padx=5,pady=5, sticky="w")
+		ttkB.Label(frame_form, text="Nome: ").grid(row=0, column=0, padx=5,pady=8, sticky="w")
 		
 		# configuração da caixa de texto do nome
 		# width=40 a caixa de texto do nome tera 40 pixels de largura
@@ -32,30 +36,31 @@ class ClienteWindow(tk.Toplevel):
 		# por exemplo, neste caso da caixa de texto do nome
 		# ficará 5 pixels de distancia do lado esquerdo e 5 pixels de distancia da margem
 		# debaixo dele
-		self.entry_nome = ttk.Entry(frame_form, width=40)
-		self.entry_nome.grid(row=0, column=1, padx=5, pady=5)
+		self.entry_nome = ttkB.Entry(frame_form, width=40)
+		self.entry_nome.grid(row=0, column=1, columnspan=2, padx=5, pady=5, sticky="ew")
 		
-		ttk.Label(frame_form, text="CPF:").grid(row=1, column=0, padx=5, pady=5, sticky="w")
-		self.entry_cpf = ttk.Entry(frame_form, width=20)
-		self.entry_cpf.grid(row=1, column=1, padx=5, pady=5, sticky="w")
+		ttkB.Label(frame_form, text="CPF:").grid(row=1, column=0, padx=5, pady=5, sticky="w")
+		self.entry_cpf = ttkB.Entry(frame_form, width=40)
+		self.entry_cpf.grid(row=1, column=1, columnspan=2, padx=5, pady=5, sticky="ew")
+		
 
-		ttk.Label(frame_form, text="Endereço:").grid(row=2, column=0, padx=5, pady=5, sticky="w")
-		self.entry_endereco = ttk.Entry(frame_form, width=20)
-		self.entry_endereco.grid(row=2, column=1, padx=5, pady=5, sticky="w")
+		ttkB.Label(frame_form, text="Endereço:").grid(row=2, column=0, padx=5, pady=5, sticky="w")
+		self.entry_endereco = ttkB.Entry(frame_form, width=20)
+		self.entry_endereco.grid(row=2, column=1, columnspan=2, padx=5, pady=5, sticky="ew")
 
-		ttk.Label(frame_form, text="Email:").grid(row=3, column=0, padx=5, pady=5, sticky="w")
-		self.entry_email = ttk.Entry(frame_form, width=20)
-		self.entry_email.grid(row=3, column=1, padx=5, pady=5)
+		ttkB.Label(frame_form, text="Email:").grid(row=3, column=0, padx=5, pady=5, sticky="w")
+		self.entry_email = ttkB.Entry(frame_form, width=20)
+		self.entry_email.grid(row=3, column=1, columnspan=2, padx=5, pady=5, sticky="ew")
 
-		ttk.Label(frame_form, text="Senha:").grid(row=4, column=0, padx=5, pady=5, sticky="w")
+		ttkB.Label(frame_form, text="Senha:").grid(row=4, column=0, padx=5, pady=5, sticky="w")
 		
 		# Campo de senha com variável de controle
 		self.var_mostrar_senha = tk.BooleanVar(value=False)  # para controlar o estado
-		self.entry_senha = ttk.Entry(frame_form, width=10, show="*", textvariable=tk.StringVar())
-		self.entry_senha.grid(row=4, column=1, padx=5, pady=5, sticky="w")
+		self.entry_senha = ttkB.Entry(frame_form, width=10, show="*", textvariable=tk.StringVar())
+		self.entry_senha.grid(row=4, column=1, columnspan=1, padx=5, pady=5, sticky="ew")
 
 		# Botão para alternar visibilidade
-		self.botao_mostrar = ttk.Checkbutton(
+		self.botao_mostrar = ttkB.Checkbutton(
     		frame_form,
     		text="Mostrar senha",
     		variable=self.var_mostrar_senha,
@@ -63,30 +68,35 @@ class ClienteWindow(tk.Toplevel):
 		)
 		self.botao_mostrar.grid(row=4, column=2, padx=5, pady=5)
 
-		ttk.Label(frame_form, text="Nível:").grid(row=5, column=0, padx=5, pady=5, sticky="w")
+		ttkB.Label(frame_form, text="Nível:").grid(row=5, column=0, padx=5, pady=5, sticky="w")
 
 		self.niveis_disponiveis = ["1", "2", "3"]
-		self.combo_nivel = ttk.Combobox(frame_form, values=self.niveis_disponiveis, state="readonly")
+		self.combo_nivel = ttkB.Combobox(frame_form, values=self.niveis_disponiveis, state="readonly")
 		self.combo_nivel.grid(row=5, column=1, padx=5, pady=5, sticky="w")
 		self.combo_nivel.set("1")  # valor padrão
 		
 		# --- Botões de Ação ---
-		frame_botoes = ttk.Frame(self)
-		frame_botoes.pack(pady=5)
-		ttk.Button(frame_botoes, text="Salvar", command=self.salvar_cliente).pack(side=tk.LEFT, padx=5)
-		ttk.Button(frame_botoes, text="Excluir", command=self.excluir_cliente).pack(side=tk.LEFT, padx=5)
-		ttk.Button(frame_botoes, text="Limpar", command=self.limpar_formulario).pack(side=tk.LEFT, padx=5)
-
+		frame_botoes = ttkB.Frame(self, padding=(0,10))
+		frame_botoes.pack(fill="none")
+		ttkB.Button(frame_botoes, text="Salvar", command=self.salvar_cliente, style='info.TButton').pack(side=tk.LEFT, padx=5)
+		ttkB.Button(frame_botoes, text="Excluir", command=self.excluir_cliente, style='info.TButton').pack(side=tk.LEFT, padx=5)
+		ttkB.Button(frame_botoes, text="Limpar", command=self.limpar_formulario, style='info.TButton').pack(side=tk.LEFT, padx=5)
+		
+		
 		# --- Tabela de Visualização ---
-		frame_lista = ttk.LabelFrame(self, text="Clientes Cadastrados")
+		frame_lista = ttkB.LabelFrame(self, text="Clientes Cadastrados")
 		frame_lista.pack(padx=10, pady=10, fill="both", expand=True)
 		
-		self.tree = ttk.Treeview(frame_lista, columns=("id", "nome", "endereco", "cpf", "email", "senha", "nivel"), show="headings")
-		self.tree.heading("id", text="ID"); self.tree.column("id", width=40)
+		self.tree = ttkB.Treeview(frame_lista, 
+							columns=("id","nome", "endereco", "cpf","email", "senha", "nivel"), 
+							show="headings",
+							bootstyle="primary"
+							)
+		self.tree.heading("id", text="ID");
 		self.tree.heading("nome", text="Nome")
 		self.tree.heading("endereco", text="Endereço")
 		self.tree.heading("cpf", text="CPF"); self.tree.column("cpf", width=120)
-		self.tree.heading("email", text="Email")
+		self.tree.heading("email", text="E-mail")
 		self.tree.heading("senha", text="Senha")
 		self.tree.heading("nivel", text="Nível")
 		self.tree.pack(fill="both", expand=True)

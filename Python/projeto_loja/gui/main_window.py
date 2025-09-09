@@ -1,4 +1,5 @@
 import tkinter as tk
+import ttkbootstrap as ttk
 from tkinter import messagebox
 
 # importando as classes das telas de cadastros
@@ -8,9 +9,10 @@ from .cliente_window import ClienteWindow
 from .funcionario_window import FuncionarioWindow
 from .marca_window import MarcaWindow
 from .produto_window import ProdutoWindow
+from .dashboard import DashboardFrame
 
 # janela principal do sistema
-class MainWindow(tk.Tk):
+class MainWindow(ttk.Window):
 	def __init__(self, conn):
 		"""
 			utilizamos o conn aqui para que conseguimos conectar ao banco
@@ -18,9 +20,10 @@ class MainWindow(tk.Tk):
 		
 		"""
 
-		super().__init__()
+		# litera, superhero, darkly
+		super().__init__(themename = "lumen")
 		self.title("Sistema de Loja - Senac") # título da janela
-		self.geometry("800x600") # tamanho da janela
+		self.geometry("1200x720") # tamanho da janela
 
 		# armazena a conexão para ser usada pelas próximas janelas filhas
 		self.conn = conn
@@ -35,14 +38,8 @@ class MainWindow(tk.Tk):
 	# cria os widgets da janela principal
 	# ex: labels, imagens, etc. O que quisermos inserir
 	def create_widgets(self):
-		# label de boas-vindas
-		label = tk.Label(
-			self,
-			text="Bem-vindo ao Sistema de Gestão de Loja - VOUCHER",
-			font=("Arial",18,"bold"), #  tipo da fonte, tamanho e estilo
-			pady=20
-		)
-		label.pack(expand=True)
+		dashboard = DashboardFrame(self, self.conn)
+		dashboard.pack(fill="both", expand=True)
 
 	# cria a barra de menu superior, do lado esquerdo da tela
 	def create_menu(self):
@@ -57,6 +54,7 @@ class MainWindow(tk.Tk):
 		cadastro_menu.add_command(label="Funcionários", command=self.abrir_janela_funcionarios)
 		cadastro_menu.add_command(label="Produtos", command=self.abrir_janela_produtos)
 		cadastro_menu.add_command(label="Marcas", command=self.abrir_janela_marcas)
+		
 
 		# adiciona uma linha separadora
 		cadastro_menu.add_separator() 		

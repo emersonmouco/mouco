@@ -1,0 +1,85 @@
+# Byte-compiled / cache files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribuição / pacotes
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+parts/
+var/
+sdist/
+develop-eggs/
+.installed.cfg
+lib/
+lib64/
+__pypackages__/
+
+# Virtual environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Ferramentas de IDE
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Arquivos de banco de dados SQLite
+*.sqlite3
+
+# Arquivos de configuração locais
+*.env
+.env.*
+*.local
+*.secret
+*.log
+
+# Arquivos de mídia e estáticos gerados
+/media/
+staticfiles/
+static/
+static_root/
+media_root/
+
+# Arquivos do Django
+db.sqlite3
+db.sqlite3-journal
+
+# Arquivos de migração não rastreados
+*/migrations/*.pyc
+*/migrations/__pycache__/
+
+# Outros arquivos temporários
+*.pot
+*.pyc
+*.pyo
+*.pyd
+*.swp
+*.bak
+*.tmp
+*.orig
+
+# Arquivos de testes
+.coverage
+.tox/
+.nox/
+.cache/
+.pytest_cache/
+nosetests.xml
+coverage.xml
+*.cover
+*.log
+htmlcov/
+
+# Arquivos do sistema operacional
+.DS_Store
+Thumbs.db

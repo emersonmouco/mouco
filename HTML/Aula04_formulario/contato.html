@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Sua Loja</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Sua Loja</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Produtos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Contato</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="bi bi-cart"></i> Carrinho</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container my-5">
+        <div class="text-center mb-5">
+            <h1>Fale Conosco</h1>
+            <p class="lead">Tem alguma dúvida, sugestão ou reclamação? Estamos aqui para ajudar!</p>
+        </div>
+
+        <div class="row g-5">
+            <div class="col-md-6">
+                <h3 class="mb-4">Envie uma Mensagem</h3>
+                <form>
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="nome" placeholder="Seu nome completo">
+                        <label for="nome">Nome Completo</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="email" class="form-control" id="email" placeholder="nome@exemplo.com">
+                        <label for="email">Endereço de E-mail</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <select class="form-select" id="assunto" aria-label="Selecione o assunto">
+                            <option selected>Selecione o assunto</option>
+                            <option value="1">Dúvida sobre Produto</option>
+                            <option value="2">Problema com Pedido</option>
+                            <option value="3">Sugestão</option>
+                            <option value="4">Outros</option>
+                        </select>
+                        <label for="assunto">Assunto</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <textarea class="form-control" placeholder="Deixe sua mensagem aqui" id="mensagem"
+                            style="height: 150px"></textarea>
+                        <label for="mensagem">Sua Mensagem</label>
+                    </div>
+                    <div class="d-grid">
+                        <button type="submit" class="btn btn-primary btn-lg">Enviar Mensagem</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="col-md-6">
+                <h3 class="mb-4">Informações de Contato</h3>
+                <ul class="list-unstyled">
+                    <li class="d-flex align-items-center mb-3">
+                        <i class="bi bi-geo-alt-fill fs-4 me-3"></i>
+                        <span>Av. Rosário Congro, 1234 - Três Lagoas, MS, Brasil</span>
+                    </li>
+                    <li class="d-flex align-items-center mb-3">
+                        <i class="bi bi-telephone-fill fs-4 me-3"></i>
+                        <span>(67) 3521-0000</span>
+                    </li>
+                    <li class="d-flex align-items-center mb-3">
+                        <i class="bi bi-whatsapp fs-4 me-3"></i>
+                        <span>(67) 99988-7766</span>
+                    </li>
+                    <li class="d-flex align-items-center mb-3">
+                        <i class="bi bi-envelope-fill fs-4 me-3"></i>
+                        <span>contato@sualoja.com.br</span>
+                    </li>
+                    <li class="d-flex align-items-center mb-3">
+                        <i class="bi bi-clock-fill fs-4 me-3"></i>
+                        <span>Segunda a Sexta, das 8h às 18h</span>
+                    </li>
+                </ul>
+
+                <hr class="my-4">
+
+                <h3 class="mb-3">Nossa Localização</h3>
+                <div class="ratio ratio-16x9">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14878.23662589503!2d-51.70114063022461!3d-20.7899808!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9490176846a6f675%3A0x6d9263a23a8e983a!2sTr%C3%AAs%20Lagoas%20-%20MS!5e0!3m2!1spt-BR!2sbr!4v1689452700000!5m2!1spt-BR!2sbr"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-white text-center p-3 mt-5">
+        <p>&copy; 2025 Sua Loja. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
+        </script>
+
+</body>
+
+</html>

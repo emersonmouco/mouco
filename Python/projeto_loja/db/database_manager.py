@@ -11,7 +11,7 @@ from mysql.connector import Error
 DB_CONFIG = {
 	'host': 'localhost', # local que ta instalado o banco de dados
 	'user' : 'root', # usuario principal do banco de dados, pode ser root
-	'password': 'VoucherDev@2024', # senha do usuario principal
+	'password': 'admin123', # senha do usuario principal
 	'database' : 'projeto_loja' # nome do banco, no banco de dados
 }
 
@@ -200,7 +200,7 @@ def excluir_cliente(conn, id_pessoa):
         cursor.close()
 
 # ---- CRUD DO FUNCIONARIO ----
-def cadastrar_funcionario(conn, nome, endereco, cargo, salario):
+def cadastrar_funcionario(conn, nome, endereco, salario, cargo):
 	cursor = conn.cursor()
 	try:
 		conn.start_transaction()
@@ -208,8 +208,8 @@ def cadastrar_funcionario(conn, nome, endereco, cargo, salario):
 		cursor.execute(sql_pessoa, (nome, endereco))
 
 		id_pessoa = cursor.lastrowid
-		sql_funcionario = "INSERT INTO funcionario (salario_funcionario, cargo_funcionario, id_pessoa) VALUES (%s, %s, %s)"
-		cursor.execute(sql_funcionario, (salario, cargo, id_pessoa))
+		sql_cliente = "INSERT INTO funcionario (salario_funcionario, cargo_funcionario, id_pessoa) VALUES (%s, %s, %s)"
+		cursor.execute(sql_cliente, (salario, cargo, id_pessoa))
 
 		conn.commit()
 	except Exception as e:
@@ -309,9 +309,12 @@ def listar_produtos(conn):
 			ORDER BY
 				p.nome_produto
 		"""
+		cursor.execute(sql)
+		resultados = cursor.fetchall()
+		return resultados
 	except Error as e:
 		print(f"Erro ao listar produtos. Erro: {e}")
-		raise e
+		return []
 	finally:
 		cursor.close()
 
@@ -337,14 +340,13 @@ def alterar_produto(conn, id_produto, nome, preco, descricao, id_marca):
 		cursor.close()
 
 def excluir_produto(conn, id_produto):
-	cursor = conn.cursor()
+    cursor = conn.cursor()
+    try:
+        sql = "DELETE FROM produto WHERE id_produto = %s"
+        cursor.execute(sql, (id_produto,))
+        conn.commit()
+    except Exception as e:
+        raise e
+    finally:
+        cursor.close()
 
-	try:
-		sql = "DELETE FROM produto WHERE id_produto = %s"
-		cursor.execute(sql, (id_produto))
-		conn.commit()
-	except Error as e:
-		print(f"Erro ao excluir produto. Erro: {e}")
-		raise e
-	finally:
-		cursor.close()

@@ -1,8 +1,7 @@
 class Pessoa:
-	def __init__(self, id, nome, cpf, endereco):
+	def __init__(self, id, nome, endereco):
 		self.id = id
 		self.nome = nome
-		self.cpf = cpf
 		self.endereco = endereco
 	
 	# metodo salvar que será implementado pela subclasse

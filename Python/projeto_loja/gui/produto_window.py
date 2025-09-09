@@ -55,10 +55,12 @@ class ProdutoWindow(tk.Toplevel):
 		self.tree.heading("marca", text="Marca"); self.tree.column("marca", width=20)
 		self.tree.pack(fill="both", expand=True)
 		self.tree.bind('<<TreeviewSelect>>', self.ao_selecionar_item)
+
+		self.carregar_produtos()
 	
 	def carregar_marcas_combobox(self):
 		# carregar as marcas cadastradas para cadastrar o produto
-		marcas_db = db.listar_marcas(self.conn)
+		marcas_db = db.listar_marcas(self.conn) or []
 		self.marcas_map.clear()
 		nomes_marcas = []
 		if marcas_db:
@@ -130,6 +132,7 @@ class ProdutoWindow(tk.Toplevel):
 
 		self.id_selecionado = item[0]
 		self.entry_nome.insert(0, item[1])
+		
 		preco_str = str(item[2]).replace("R$","").strip() # aqui ele só irá substituir o cifrão se existir
 		self.entry_preco.insert(0, preco_str)
 		self.entry_descricao.insert(0, item[3])
@@ -138,7 +141,8 @@ class ProdutoWindow(tk.Toplevel):
 		# para eu alterar o que já existe de dados cadastrados de marca
 		# eu precisaria ir no cadastro de marca, por isso eu uso o set ao inves de insert
 		self.combo_marca.set(item[4])
-	
+
+
 	def limpar_formulario(self):
 		self.id_selecionado = None
 		self.entry_nome.delete(0, tk.END)
@@ -164,18 +168,15 @@ class ProdutoWindow(tk.Toplevel):
 			self.tree.insert("","end",values=dados_produto)
 	
 	def excluir_produto(self):
-		if not self.id_selecionado:
-			messagebox.showwarning("Aviso", "Selecione um produto para excluir.")
+		if self.id_selecionado is None:
+			messagebox.showwarning("Aviso","Selecione um produto para excluir!")
 			return
 		
-		if messagebox.askyesno("Confirmar exclusão",
-						 f"Tem certeza que deseja excluir o produto {self.id_selecionado}?"):
+		if messagebox.askyesno("Confirmar exclusão","Tem certeza que deseja excluir este produto?"):
 			try:
 				db.excluir_produto(self.conn, self.id_selecionado)
-				messagebox.showinfo("Sucesso", "produto excluído com sucesso!")
+				messagebox.showinfo("Sucesso", "Produto excluído com sucesso!")
 				self.limpar_formulario()
 				self.carregar_produtos()
 			except Exception as e:
-				messagebox.showerror("Erro no banco de dados",
-						 f"não foi possível excluir o produto. \nErro: {e}")
-				
+				messagebox.showerror("Erro ao excluir", f"Não foi possível excluir o produto. \nErro: {e}")

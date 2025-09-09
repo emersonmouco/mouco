@@ -2,8 +2,9 @@ from .pessoa import Pessoa
 from db import database_manager as db # importando o gerenciador do banco de dados
 
 class Cliente(Pessoa):
-	def __init__(self, id, nome, cpf, endereco, email, senha, nivel):
-		super().__init__(id, nome, cpf, endereco)
+	def __init__(self, id, nome, endereco, cpf, email, senha, nivel):
+		super().__init__(id, nome, endereco)
+		self.cpf = cpf
 		self.email = email
 		self.senha = senha
 		self.nivel = nivel
